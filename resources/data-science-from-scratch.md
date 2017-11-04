@@ -32,3 +32,14 @@
 
 * Could you create a recommender / matching system that given a set of products and a set of markets could perform some form of optimal matching on them?
 
+## Datasets
+
+* www.data.gov
+
+* www.reddit.com/r/data
+
+* www.reddit.com/r/datasets
+
+* aws.amazon.com/public-data-sets
+
+* www.kaggle.com
