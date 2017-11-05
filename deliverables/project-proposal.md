@@ -16,9 +16,9 @@
 
 ---
 
-* On June 23, 2016, in what has come to he known as the *Brexit Referendum*, the United Kingdom (UK) voted to leave European Union (EU).
+* On June 23, 2016, in what has come to he known as the *Brexit Referendum*, the United Kingdom (UK) voted to leave the European Union (EU).
 
-* The effect of Brexit on the UK's trade and economy is one of the most pressing debates as we approach final day of UK's membership in the EU, March 29, 2019.
+* The effect of Brexit on the UK's trade and economy is one of the most pressing debates as we approach the final day of UK's membership in the EU, March 29, 2019.
 
 * There is a consensus in the academic community that in the long run, Brexit will have a negative effect on trade, although the extent of the effect is uncertain. [CITE](https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163)
 
@@ -70,7 +70,7 @@
 
 * Quantitative rigour will be achieved by extracting salient features from data via established algorithms such as *Principle Component Analysis* (PCA) and *Non-Negative Matrix Factorization* (NMF). Using *correlation matrices* of these features with output variables, sets of features from disparate data sources can be integrated into a single indicator quantitatively.
 
-* Unlike other methodologies that focus on the volume/value of data, we will be focusing on using data from variety of sources (satellite imagery, amount of bike friendly lanes, number of Starbucks, average income, etc.). From this variety, will inevitably find proxy measures that though not causal, are non the less predictive of what we are interested in.
+* Unlike other methodologies that focus on the volume/value of data, we will be focusing on using data from a variety of sources (satellite imagery, amount of bike friendly lanes, number of Starbucks, average income, etc.). From this variety, we will inevitably find proxy measures that though not causal, are nonetheless predictive of what we are interested in.
 
 * Much like in *ensemble learning* where a set of *weak learners* are used in conjunction to produce a strong model, we believe that by integrating weak signals from a variety of datasets, we can eliminate noise to capture subtle but powerful indicators. These indicators would otherwise be overlooked by methodologies not focused on the complex interplay that creates the salient characteristics of ecosystems.
 
@@ -170,6 +170,6 @@
 
 > There are two primary criteria for evaluating this project.
 
-* Are the indicators our methodology produce valuable in identifying potential markets for UK products in the US?
+* Are the indicators our methodology produces valuable in identifying potential markets for UK products in the US?
 
 * Is the system we designed flexible enough to be used to create new indicators with different datasets to address other problems that would benefit from systematic weak signal analysis?
