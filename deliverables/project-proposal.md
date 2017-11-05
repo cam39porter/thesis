@@ -46,21 +46,23 @@
 
 * [IMG Forum Expert Panel Survey on Brexit II](http://www.igmchicago.org/surveys/brexit-ii)
 
-### [TODO] Market Fit / Identification
+### Market Segmentation
 
-* Ad hoc methodology
+> *Market segmentation* describes the process of dividing potential consumers into particular groups based on shared characteristics. The characteristics shared by certain segments will make them in expectation a better *target market*. There are different types of market segmentation. Ours falls into the category of *geodemographic segmentation*. Our system can be considered a *geographic information system*.
 
-* Non quantitative reasoning
+* [Esri Demographics](http://www.esri.com/data/esri_data)
 
-* Indexes (business friendliness...)
+* [PSYTE HD: Market segmentation system for Canada](https://www.pitneybowes.com/us/data/demographic-data/psyte-hd-canada.html)
 
-### [TODO] Big Data
+### Weak Signal Analysis
 
-* List
+> There *five V's* of big data: volume, velocity, variety, variability, and value. Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators. *Strong signals*, by contrast, arise from a single source.
 
-### [TODO] Weak Signal Analysis
+* [How to Make Sense of Weak Signals](http://sloanreview.mit.edu/article/how-to-make-sense-of-weak-signals/)
 
-* List
+* [The strategic strength of weak signal analysis](http://www.sciencedirect.com/science/article/pii/S0016328711002564)
+
+* [The strongness of weak signals: self-reference and paradox in anticipatory systems](https://link.springer.com/article/10.1007/s40309-016-0085-1)
 
 ## Approach
 
@@ -68,7 +70,7 @@
 
 * Our approach to identifying markets for UK products focuses on quantitative rigour and weak signal analysis to create ecosystem level insights.
 
-* Quantitative rigour will be achieved by extracting salient features from data via established algorithms such as *Principle Component Analysis* (PCA) and *Non-Negative Matrix Factorization* (NMF). Using *correlation matrices* of these features with output variables, sets of features from disparate data sources can be integrated into a single indicator quantitatively.
+* Quantitative rigour will be achieved by extracting salient features from data via established algorithms such as *Principle Component Analysis* (PCA) and *Non-Negative Matrix Factorization* (NMF). Clustering algorithms can also be used to identify interesting shared characteristics across markets. Using *correlation matrices* of these features with output variables, sets of features from disparate data sources can be integrated into a single indicator quantitatively.
 
 * Unlike other methodologies that focus on the volume/value of data, we will be focusing on using data from a variety of sources (satellite imagery, amount of bike friendly lanes, number of Starbucks, average income, etc.). From this variety, we will inevitably find proxy measures that though not causal, are nonetheless predictive of what we are interested in.
 
@@ -152,7 +154,7 @@
 
 * Persistent storage will come in a variety of forms depending on the structure of the data source. These potentially include `S3`, `MySQL`, and `Mongo`.
 
-* Datasets will be virtualized using Dremio's open source software. Dremio allows you to build virtual datasets that are created from queries on a variety of distinct data sources.
+* Datasets will be virtualized using `Dremio`'s open source software. `Dremio` allows you to build virtual datasets that are created from queries on a variety of distinct data sources.
 
 * The analysis layer is described below.
 
