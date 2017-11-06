@@ -162,7 +162,7 @@
 
 > Analysis and model creation will be done primarily using Python and presentation with Javascript.
 
-* For analysis, libraries such as `pandas`, `numpy`, and `scikit-learn`, as well as `keras` if neural networks are used. Jupyter notebooks will be used.
+* For analysis, libraries such as `pandas`, `numpy`, `scikit-learn`, and as `keras` will be used. Jupyter notebooks will be used.
 
 * Heat maps can be produced using the `ArcGIS` Javascript API.
 
