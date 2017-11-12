@@ -2,45 +2,39 @@
 
 ## Title
 
----
-
 * **Name**: Cameron Porter
 
 * **Class**: 2016
 
 * **Title**: *Identification of United Kingdom Export Markets Post-Brexit via Systematic Weak Signal Analysis*
 
-* **Advisors**: Christopher Moretti & Greg van der Vink
+* **Advisors**: Christopher M. Moretti & Gregory E. van der Vink
 
 ## Motivation and Goal
 
----
-
-* On June 23, 2016, in what has come to he known as the *Brexit Referendum*, the United Kingdom (UK) voted to leave the European Union (EU).
+* On June 23, 2016, in what has come to he known as the *Brexit Referendum*, the United Kingdom (UK) voted to leave the European Union (EU) [(HM Treasury, 5)](#treasury-brexit).
 
 * The effect of Brexit on the UK's trade and economy is one of the most pressing debates as we approach the final day of UK's membership in the EU, March 29, 2019.
 
-* There is a consensus in the academic community that in the long run, Brexit will have a negative effect on trade, although the extent of the effect is uncertain. [CITE](https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163)
+* There is a consensus in the academic community that in the long run, Brexit will have a negative effect on trade, although the extent of the effect is uncertain [(Sampson, 164)](#sampson-brexit).
 
 * The purpose of this project is not to analyze the economics of Brexit.
 
-* The purpose of this project is to design a systematic way of quantitatively analyzing potential markets for UK products in order to optimize the UK's Department of International Trade's effort to boost UK exports in the face of a seemingly inevitable decline.
+* The purpose of this project is to design a systematic way of quantitatively analyzing potential markets for UK products in order to optimize the UK's Department of International Trade's effort to boost UK net trade in the face of a seemingly inevitable decline.
 
-* Our goal is to design an automated *weak signal analysis* system, capable of dynamic data augmentation, for identifying markets for up to five UK products in the United States (US).
+* Our goal is to design an automated *weak signal analysis* system, capable of dynamic data augmentation, for identifying markets for up to five UK products/services in the United States (US).
 
 ## Problem Background and Related Work
-
----
 
 ### Economics of Brexit
 
 > Academics, private firms, and government agencies have weighed in on the economics of Brexit. Overall, the analysis focuses on two aspects of Brexit: what will be the macro level effects on the UK's economy, and what is the desired nature of relations between the EU and UK post Brexit.
 
-* [HM Treasury analysis: the long-term economic impact of EU membership and the alternatives](https://www.gov.uk/government/publications/hm-treasury-analysis-the-long-term-economic-impact-of-eu-membership-and-the-alternatives)
+* [(HM Treasury)](#treasury-brexit)
 
-* [Brexit and UK's Public Finances](https://www.ifs.org.uk/uploads/publications/comms/r116.pdf)
+* [(Carl)](carl-brexit)
 
-* [Brexit: The Economics of International Disintegration](https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163)
+* [(Sampson)](#sampson-brexit)
 
 * [IMG Forum Expert Panel Survey on Brexit I](http://www.igmchicago.org/surveys/brexit-2)
 
@@ -50,13 +44,15 @@
 
 > *Market segmentation* describes the process of dividing potential consumers into particular groups based on shared characteristics. The characteristics shared by certain segments will make them in expectation a better *target market*. There are different types of market segmentation. Ours falls into the category of *geodemographic segmentation*. Our system can be considered a *geographic information system*.
 
+* [(Grekousis)](#grekousis-segmentation)
+
 * [Esri Demographics](http://www.esri.com/data/esri_data)
 
 * [PSYTE HD: Market segmentation system for Canada](https://www.pitneybowes.com/us/data/demographic-data/psyte-hd-canada.html)
 
 ### Weak Signal Analysis
 
-> There *five V's* of big data: volume, velocity, variety, variability, and value. Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators. *Strong signals*, by contrast, arise from a single source.
+> There are *five V's* of big data: volume, velocity, variety, variability, and value [(Jain)](#jain-data). Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators. *Strong signals*, by contrast, arise from a single source. The result of our weak signal analysis will be a suite of indicators, no one of which is predictive of our desired output, but in combination provide valuable insight.
 
 * [How to Make Sense of Weak Signals](http://sloanreview.mit.edu/article/how-to-make-sense-of-weak-signals/)
 
@@ -66,7 +62,9 @@
 
 ## Approach
 
----
+### Conceptual Framework
+
+> This section describes the operating lense for this project, including the assumptions being made and theory behind our methodology.
 
 * Our approach to identifying markets for UK products focuses on quantitative rigour and weak signal analysis to create ecosystem level insights.
 
@@ -86,67 +84,145 @@
 
 * Using a variety of data sources, weak signal analysis, and an automated system, we hope to be able to create heat maps identifying potential markets for UK products.
 
+### Taxonomy
+
+> This section lays out the components of our methodology in a schematic form.
+
+### Algorithm
+
+> This section describes the algorithm behind the methodology in mathematical form.
+
 ## Plan
 
----
+### Product / Service Selection
+
+> In order to test our methodology, we have selected five UK products/services. In order to qualify for selection, these products/services must already be successfully exported to the US. This may seem counterintuitive, but the purpose is to hone the focus of this project. The goal of the project is to identify prime markets for UK products/services. By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success. These factors include quotas, tariffs, and regulatory compliance. We would also like to note our reasoning for selecting not only products, but services as well. The purpose of the project is to boost UK's net trade. This can be done by decreasing imports or increasing exports. Since products are often made from imported components, the value in terms net trade from exporting them is partially offset by the import cost of the components. However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
+
+* [TODO] Why store already exporting via e-commerce would benefit from brick and mortar stores.
+
+* [Brompton](https://www.brompton.com/)
+
+* [Rapha](http://www.rapha.cc/us/en_US/)
+
+* [Vulpine](http://www.vulpine.cc/uk/mens/new)
+
+* [TODO] Financial Service
+
+* [TODO] Service Two
 
 ### Datasets
 
 > We have already identified a number of potential data sets from a variety of providers including, Princeton, Kaggle, Amazon, Uber, and the US Government. Each of these datasets has a location attribute. What follows is a selection of them.
 
-#### Princeton
+#### Census
 
-* [Sage Stats](http://library.princeton.edu/resource/4453)
+> Census data can provide demographic insights useful for geodemographic market segmentation.
 
-* [CQ Congress Collection](http://library.princeton.edu/resource/5062)
+* [Sage Stats](http://library.princeton.edu/resource/4453) is a collection of US state rankings on variety of topics.
 
-* [American FactFinder](http://library.princeton.edu/resource/4640)
+* [American FactFinder](http://library.princeton.edu/resource/4640) combines data from the US decennial census, the American Community Survey, and more.
 
-* [CQ Political MoneyLune](http://library.princeton.edu/resource/5082)
+* [US Income Tax Data](https://www.kaggle.com/wpncrh/zip-code-income-tax-data-2014) provides data on the income by zip code.
 
-#### Amazon
+* [US Permanent Visa Applications](https://www.kaggle.com/jboysen/us-perm-visas) provides data on where Visa applications originate.
 
-* [US Census ACS PUMS](https://aws.amazon.com/public-datasets/us-census-acs-pums/)
+* [IRS 990 Filings](https://aws.amazon.com/public-datasets/irs-990/) provides data on nonprofit tax filings.
 
-* [Landsat](https://aws.amazon.com/public-datasets/landsat/)
+* [Open Address](http://results.openaddresses.io/) provides street names, house numbers, and postal codes that can be combines with geographic coordinates.
 
-#### Kaggle
+* [World Cities Database](https://www.kaggle.com/max-mind/world-cities-database) provides data to convert country and city names to geographic coordinates.
 
-* [Move Hub Rankings](https://www.kaggle.com/blitzr/movehub-city-rankings)
+* [Homlessness in the United States](https://www.kaggle.com/adamschroeder/homelessness) provides data on the rates of homelessness in cities.
 
-* [Open Address](https://openaddresses.io/)
+#### Housing
 
-* [AirBnB](http://insideairbnb.com/get-the-data.html)
+> The cost of living is an important characteristic of populations.
 
-* [Restaurants on YellowPages.com](https://www.kaggle.com/PromptCloudHQ/restaurants-on-yellowpagescom)
+* [Census of Population and Housing](http://library.princeton.edu/resource/5016) contains useful demographic information.
 
-* [Airport, Train Stations, and Ferry Terminals](https://www.kaggle.com/open-flights/airports-train-stations-and-ferry-terminals)
+* [Zillow Rent Index](https://www.kaggle.com/zillow/rent-index) provides data on the median estimated monthly rental price for given areas.
 
-* [US Permanent Visa Applications](https://www.kaggle.com/jboysen/us-perm-visas)
+* [AirBnB Listings](http://insideairbnb.com/get-the-data.html) provides data on neighborhoods and rental prices in select US cities.
 
-* [Ted Talk Locations](https://www.kaggle.com/rounakbanik/ted-talks)
+* [US Gross Rent Statistics](https://www.kaggle.com/goldenoakresearch/acs-gross-rent-us-statistics) provides gross rent data across the US.
 
-* [US Jobs on Monster.com](https://www.kaggle.com/PromptCloudHQ/us-jobs-on-monstercom)
+#### Trade
 
-* [US Election Data](https://www.kaggle.com/benhamner/2016-us-election)
+> US trade data can be useful in evaluating the effectiveness of our methodology.
 
-* [US Household Incomes](https://www.kaggle.com/goldenoakresearch/us-household-income-stats-geo-locations)
+* [Wiser Trade](http://library.princeton.edu/resource/4433) is an international trade database that provides data on U.S. exports and imports by customs district and port.
 
-* [KickStarter](https://www.kaggle.com/socathie/kickstarter-project-statistics)
+* [City Data](http://library.princeton.edu/resource/title/city-data) provides a city by city guide to product costs and business expenses.
 
-* [Starbucks Locations](https://www.kaggle.com/starbucks/store-locations)
+#### Retail
 
-#### [Uber Movement Data](https://movement.uber.com/cities?lang=en-US)
+> The retail stores already located in a given city can provide insights into the consumption preferences of the population.
 
-#### Government
+* [Whole Foods](https://www.wholefoodsmarket.com/stores/list/state) is a high end grocery store whose locations tend to be in close proximity to affluent areas.
 
-* [Amtrak](https://catalog.data.gov/dataset/amtrak-rail-stations-national)
+* [Starbucks Locations](https://www.kaggle.com/starbucks/store-locations) provides insight into the prevalence of Starbucks in US cities.
 
-* [Major Ports](https://catalog.data.gov/dataset/major-ports-national)
+* [Breweries & Brew Pubs in the USA](https://www.kaggle.com/datafiniti/breweries-brew-pubs-in-the-usa) provides data on the location of breweries.
 
-* [Freight Analysis Framework](https://catalog.data.gov/dataset/freight-analysis-framework-network-national)
+* [Restaurants on YellowPages.com](https://www.kaggle.com/PromptCloudHQ/restaurants-on-yellowpagescom) provides data on the type and quality of restaurants.
 
-* [Navigable Waterways](https://catalog.data.gov/dataset/navigable-waterway-nodes-national-national-geospatial-data-asset-ngda-waterway-nodes)
+#### Culture
+
+> We can attempt to quantify the culture of cities.
+
+* [Museums, Aquariums, and Zoos](https://www.kaggle.com/imls/museum-directory) provides location data on these entertainment entities.
+
+* [World University Rankings](https://www.kaggle.com/mylesoneill/world-university-rankings) provides data on the location of top universities.
+
+* [TED Talk Locations](https://www.kaggle.com/rounakbanik/ted-talks) provides data on the location of TED events.
+
+* [KickStarter](https://www.kaggle.com/socathie/kickstarter-project-statistics) provides data on where people who seek funding on the platform come from.
+
+#### Energy
+
+> The type and amount of energy consumed can be used to characterize cities.
+
+* [United States Energy Census](https://www.kaggle.com/lislejoem/us_energy_census_gdp_10-14) provides data on the type and amount of energy for locations across the US.
+
+#### Infrastructure
+
+> The quality of infrastructure can provide insight into the cities priorities.
+
+* [Hospital Ratings](https://www.kaggle.com/center-for-medicare-and-medicaid/hospital-ratings) provides data on the quality of health care.
+
+#### Transportation
+
+> Where people go and how they get there are important characteristics that distinguish populations.
+
+* [Uber Movement Data](https://movement.uber.com/cities?lang=en-US) captures the movement patterns of cities around the world.
+
+* [Move Hub Rankings](https://www.kaggle.com/blitzr/movehub-city-rankings) provides data on how easy it is to get around various cities.
+
+* [Airport, Train Stations, and Ferry Terminals](https://www.kaggle.com/open-flights/airports-train-stations-and-ferry-terminals) provides data on the locations of transportation hubs in the US.
+
+* [Amtrak](https://catalog.data.gov/dataset/amtrak-rail-stations-national) provides data on the location of Amtrak terminals.
+
+* [Major Ports](https://catalog.data.gov/dataset/major-ports-national) provides data on the location of major ports in the US.
+
+* [Freight Analysis Framework](https://catalog.data.gov/dataset/freight-analysis-framework-network-national) provides data for modeling freight in US.
+
+* [Navigable Waterways](https://catalog.data.gov/dataset/navigable-waterway-nodes-national-national-geospatial-data-asset-ngda-waterway-nodes) provides data on the location of navigable waterways in the US.
+
+#### Jobs
+
+> Where people work is an important demographic characteristic.
+
+* [Jobs on Naukri.com](https://www.kaggle.com/PromptCloudHQ/jobs-on-naukricom) provides job postings data.
+
+* [US Jobs on Monster.com](https://www.kaggle.com/PromptCloudHQ/us-jobs-on-monstercom) provides job postings data.
+
+#### Political
+
+> Data on politicians, in particular concerning the orientation and the special interest groups they support, can provide useful insights into the nature of their constituency.
+
+* [CQ Congress Collection](http://library.princeton.edu/resource/5062) is database containing roll call votes by topic and special interest group scores.
+
+* [CQ Political MoneyLine](http://library.princeton.edu/resource/5082) provides data on the flow of money through the US political system.
 
 ### System Architecture
 
@@ -154,7 +230,9 @@
 
 * Persistent storage will come in a variety of forms depending on the structure of the data source. These potentially include `S3`, `MySQL`, and `Mongo`.
 
-* Datasets will be virtualized using `Dremio`'s open source software. `Dremio` allows you to build virtual datasets that are created from queries on a variety of distinct data sources.
+* Datasets will be *virtualized* using `Dremio`'s open source software. `Dremio` allows you to build virtual datasets that are created from queries on a variety of distinct data sources.
+
+* This virtualized dataset will be an asset for any further analysis on this topic.
 
 * The analysis layer is described below.
 
@@ -162,16 +240,34 @@
 
 > Analysis and model creation will be done primarily using Python and presentation with Javascript.
 
-* For analysis, libraries such as `pandas`, `numpy`, `scikit-learn`, and as `keras` will be used. Jupyter notebooks will be used.
+* For analysis, libraries such as `pandas`, `numpy`, and `scikit-learn`, as well as `keras` if neural networks are used. Jupyter notebooks will be used. These libraries will be used to build a weak signal analysis module.
 
 * Heat maps can be produced using the `ArcGIS` Javascript API.
 
-## Evaluation
+<!-- TODO: add SOM / MdPM here -->
 
----
+## Evaluation
 
 > There are two primary criteria for evaluating this project.
 
-* Are the indicators our methodology produces valuable in identifying potential markets for UK products in the US?
+* To what extent are the indicators our methodology produces valuable in identifying potential markets for UK products in the US?
 
-* Is the system we designed flexible enough to be used to create new indicators with different datasets to address other problems that would benefit from systematic weak signal analysis?
+  * Backtesting could be used verify the value of the indicators we produce. This would require acquiring granular export data for one of a product/service. We could then analyze the correlation between our indicators and the success of a product/service in various markets.
+
+* To what extent is the design of our systematic weak signal analysis flexible enough to be used to address different goals?
+
+  * Answering this question will likely require a more qualitative analysis. Factors such as ease of integrating new datasets and ease of producing new indicators should be considered.
+
+## Bibliography
+
+* <a id='sampson-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>Sampson, Thomas. 2017. "Brexit: The Economics of International Disintegration". Journal of Economic Perspectives, 31(4): 163-84.</a>
+
+* <a id='treasury-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>"HM Treasury analysis: the long-term economic impact of EU membership and the alternatives". London: HM Treasury, 2016. Print.</a>
+
+* <a id='carl-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>Emmerson, Carl, et al. "Brexit and the UK's public finances". LondonLondon: Institute for Fiscal StudiesInstitute for Fiscal Studies, 2016. Print.</a>
+
+* <a id='grekousis-segmentation' href='http://www.sciencedirect.com/science/article/pii/S0143622811002256'>Grekousis, George, and Hatzichristos Thomas. "Comparison of Two Fuzzy Algorithms in Geodemographic Segmentation Analysis: The Fuzzy C-Means and Gustafson–Kessel  Methods." Applied Geography 34 (2012): 125-36. Web.</a>
+
+* <a id='jain-data' href='https://www.ibm.com/blogs/watson-health/the-5-vs-of-big-data/'>Jain, Anil. "The 5 Vs of Big Data." Watson Health Perspectives. IBM, 07 June 2017. Web.</a>
+
+<a id='' href=''></a>

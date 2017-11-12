@@ -34,7 +34,7 @@
 
 > Collects and makes publicly available through its Electronic Municipal Market Access (EMMA). The trades represent transactions by investors and dealers in the over-the-counter market for municipal securities issued by municipal entities, including states, counties, cities and special tax districts. Available through WRDS.  Requires users to validate through password (undergraduates request a research assistant account and list your adviser as your faculty member).
 
-### [CQ Political MoneyLune](http://library.princeton.edu/resource/5082)
+### [CQ Political MoneyLine](http://library.princeton.edu/resource/5082)
 
 > Provides data and reports for analyzing the flow of money through the U.S. political system. Provides campaign donation data dating to the 1979-80 election cycle and lobbying data from 1999. Track contributions from individual donors, associations, corporations, lobbyists, PACs, 527s and other sources, as well as candidate disbursement details.
 
