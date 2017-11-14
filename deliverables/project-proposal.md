@@ -110,17 +110,17 @@
 
 > In order to test our methodology, we have selected five UK products/services. In order to qualify for selection, these products/services must already be successfully exported to the US. This may seem counterintuitive, but the purpose is to hone the focus of this project. The goal of the project is to identify prime markets for UK products/services. By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success. These factors include quotas, tariffs, and regulatory compliance. We would also like to note our reasoning for selecting not only products, but services as well. The purpose of the project is to boost UK's net trade. This can be done by decreasing imports or increasing exports. Since products are often made from imported components, the value in terms net trade from exporting them is partially offset by the import cost of the components. However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
 
-<!-- * TODO: Why store already exporting via e-commerce would benefit from brick and mortar stores. -->
+<!-- TODO: Why store already exporting via e-commerce would benefit from brick and mortar stores. -->
 
 * [Brompton](https://www.brompton.com/)
 
 * [Rapha](http://www.rapha.cc/us/en_US/)
 
-* [Vulpine](http://www.vulpine.cc/uk/mens/new)
+<!-- TODO: Brewery -->
 
-<!-- TODO: Financial Service -->
+<!-- TODO: IT Services -->
 
-<!-- TODO: Service -->
+<!-- TODO: Professional Service -->
 
 ### Datasets
 
@@ -238,7 +238,10 @@
 
 ### System Architecture
 
-> The system will have three primary components: a persistent storage layer, a virtual dataset layer, and an analysis layer.
+> The system will have three primary components: a persistent storage layer, a virtual dataset layer, an analysis layer, and a presentation layer.
+
+![System Architecture Diagram](./assets/system-architecture-diagram.jpg)
+
 
 * Persistent storage will come in a variety of forms depending on the structure of the data source. These potentially include `S3`, `MySQL`, and `Mongo`.
 
