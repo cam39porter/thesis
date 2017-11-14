@@ -40,6 +40,18 @@
 
 * [IMG Forum Expert Panel Survey on Brexit II](http://www.igmchicago.org/surveys/brexit-ii)
 
+* In terms of small and medium size enterprises (SMEs), the UK's share of exports is in the bottom five across Europe [(WorldFirst, 5)](#worldfirst-brexit).
+
+* One of the primary factors deterring UK SMEs from exporting is sense that their product or service will not be suitable for a particular market [(WorldFirst, 6)](#worldfirst-brexit).
+
+* Although it may be assumed that weakening pound will increase exports, the global nature of UK supply chains combined with the potential for increased tariffs means exporters could become less competitive [(WorldFirst, 12)](#worldfirst-brexit).
+
+* Due to the price inelasticity of UK goods and services abroad, quality and brand are two of the most important factors in determining their success [(WorldFirst, 12)](#worldfirst-brexit).
+
+* More than half of SME exports go to the US [(WorldFirst, 16)](#worldfirst-brexit).
+
+* "SMEs in the IT and Communications sectors are much more likely to have plans to export (23% had such plans). Similarly, across the Professional and Scientific Service industries, 11% of SMEs said that they have such plans. This still leaves a considerable number of businesses across the UK with no intention to export" [(WorldFirst, 19)](#worldfirst-brexit).
+
 ### Market Segmentation
 
 > *Market segmentation* describes the process of dividing potential consumers into particular groups based on shared characteristics. The characteristics shared by certain segments will make them in expectation a better *target market*. There are different types of market segmentation. Ours falls into the category of *geodemographic segmentation*. Our system can be considered a *geographic information system*.
@@ -98,7 +110,7 @@
 
 > In order to test our methodology, we have selected five UK products/services. In order to qualify for selection, these products/services must already be successfully exported to the US. This may seem counterintuitive, but the purpose is to hone the focus of this project. The goal of the project is to identify prime markets for UK products/services. By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success. These factors include quotas, tariffs, and regulatory compliance. We would also like to note our reasoning for selecting not only products, but services as well. The purpose of the project is to boost UK's net trade. This can be done by decreasing imports or increasing exports. Since products are often made from imported components, the value in terms net trade from exporting them is partially offset by the import cost of the components. However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
 
-* [TODO] Why store already exporting via e-commerce would benefit from brick and mortar stores.
+<!-- * TODO: Why store already exporting via e-commerce would benefit from brick and mortar stores. -->
 
 * [Brompton](https://www.brompton.com/)
 
@@ -106,9 +118,9 @@
 
 * [Vulpine](http://www.vulpine.cc/uk/mens/new)
 
-* [TODO] Financial Service
+<!-- TODO: Financial Service -->
 
-* [TODO] Service Two
+<!-- TODO: Service -->
 
 ### Datasets
 
@@ -264,10 +276,12 @@
 
 * <a id='treasury-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>"HM Treasury analysis: the long-term economic impact of EU membership and the alternatives". London: HM Treasury, 2016. Print.</a>
 
-* <a id='carl-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>Emmerson, Carl, et al. "Brexit and the UK's public finances". LondonLondon: Institute for Fiscal StudiesInstitute for Fiscal Studies, 2016. Print.</a>
+* <a id='carl-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>Emmerson, Carl, et al. "Brexit and the UK's public finances". London: Institute for Fiscal Studies, 2016. Print.</a>
 
 * <a id='grekousis-segmentation' href='http://www.sciencedirect.com/science/article/pii/S0143622811002256'>Grekousis, George, and Hatzichristos Thomas. "Comparison of Two Fuzzy Algorithms in Geodemographic Segmentation Analysis: The Fuzzy C-Means and Gustafson–Kessel  Methods." Applied Geography 34 (2012): 125-36. Web.</a>
 
 * <a id='jain-data' href='https://www.ibm.com/blogs/watson-health/the-5-vs-of-big-data/'>Jain, Anil. "The 5 Vs of Big Data." Watson Health Perspectives. IBM, 07 June 2017. Web.</a>
+
+* <a id='worldfirst-brexit' href=''>"Thinking Global: The Route to UK Exporting Success". WorldFirst. October 2016. Print.</a>
 
 <a id='' href=''></a>
