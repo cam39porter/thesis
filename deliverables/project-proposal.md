@@ -272,6 +272,33 @@
 
 * [CQ Political MoneyLine](http://library.princeton.edu/resource/5082) provides data on the flow of money through the US political system.
 
+### Indicators
+
+> *Indicators* are arbitrary combinations of attributes from the physical datasets.
+
+* Some example indicators could be "male population as a percentage of total population" or "number of Starbucks per kilometer".
+
+* The indicators that we find most useful will most likely be ratios that adjust for population, gender disparity, income level, and education level.
+
+* The development of indicators follows an exploratory. As we run our correlation analysis and discover relationships, we likely be inspired to create more indicators. The more indicators we create, the greater the potential for capturing the underlying relationships that drive ecosystem level insights.
+
+* Indicators will be grouped into *buckets*. Some example buckets could be "health", "education", "economics", "infrastructure", "demographics", or "culture".
+
+* Below is an example of a potential indicator's final metadata structure.
+
+  * It should be noted that indicator naming conventions have not yet been established.
+
+```json
+
+{
+  "description": "male population age 15-20 per square km (2015)",
+  "abbreviation": "m_pop_15-20_per_km(2015)",
+  "bucket": "demographics",
+  "sources": ["US Census 2015"]
+}
+
+```
+
 ### System Architecture
 
 > This distributed system will consist of six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow.
@@ -298,6 +325,8 @@
 
 * This layer of abstraction means that we gain the dual benefit of the physical datasets being an immutable source of truth and the ability to structure the data optimally for analysis.
 
+* This layer will be where new indicators are created from the physical datasets. These indicators will be stored in a *space*, a logical grouping of virtual datasets in Dremio.
+
 #### Analysis Layer
 
 > The *analysis layer* is responsible for performing our weak signal analysis.
@@ -307,6 +336,8 @@
 * This layer will include our custom weak signal analysis module.
 
 * This layer will leverage such libraries as `pandas`, `numpy`, and `scikit-learn` to perform statistical analysis and machine learning.
+
+* If neural networks are used, they will likely be implemented with `keras`.
 
 * *Jupyter notebooks* will be used to initially explore and implement our methodology.
 
@@ -331,6 +362,14 @@
 * This layer will be implemented with *React.js*.
 
 * This layer will take advantage of such libraries as `ArcGIS` to produce heat maps.
+
+* This layer has the potential to leverage *self organizing maps* (SOMs).
+
+  * A SOM is an unsupervised artificial neural network. SOMs are capable of working with high dimensional data to solve nonlinear problems such as feature extraction [(Kohonen)](#kohonen-soms).
+
+  * SOMs can allow you to visualize high dimensional data in a lower dimensional space. We could thus use SOMs with our suite of indicators to produce visualizations that allow for consumers to have an intuitive understanding of the reasoning behind market recommendations.
+
+  <!-- TODO: add notes on MdPM if used -->
 
 ## Evaluation
 
@@ -357,5 +396,7 @@
 * <a id='jain-data' href='https://www.ibm.com/blogs/watson-health/the-5-vs-of-big-data/'>Jain, Anil. "The 5 Vs of Big Data." Watson Health Perspectives. IBM, 07 June 2017. Web.</a>
 
 * <a id='worldfirst-brexit' href=''>"Thinking Global: The Route to UK Exporting Success". WorldFirst. October 2016. Print.</a>
+
+* <a id='kohonen-soms' href='http://www.springer.com/us/book/9783540679219'>Kohonen, Teuvo. Self-organizing maps. Berlin New York: Springer, 2001. Print.</a>
 
 <a id='' href=''></a>
