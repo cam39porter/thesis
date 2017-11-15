@@ -144,11 +144,19 @@
 
 > [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
+* [London Tea Company](https://www.londontea.co.uk/)
+
+* [Anima Vinci](https://animavinci.com/)
+
+* [London Distillery](https://www.londondistillery.com/story)
+
 <!-- TODO: Brewery -->
 
 <!-- TODO: IT Services https://dopay.com/ -->
 
 <!-- TODO: Professional Service -->
+
+<!-- TODO: Online educational services -->
 
 ### Datasets
 
