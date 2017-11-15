@@ -104,17 +104,45 @@
 
 > This section describes the algorithm behind the methodology in mathematical form.
 
+<!-- TODO: add SOM / MdPM here -->
+
 ## Plan
 
-### Product / Service Selection
+### Product/Service Selection
 
-> In order to test our methodology, we have selected five UK products/services. In order to qualify for selection, these products/services must already be successfully exported to the US. This may seem counterintuitive, but the purpose is to hone the focus of this project. The goal of the project is to identify prime markets for UK products/services. By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success. These factors include quotas, tariffs, and regulatory compliance. We would also like to note our reasoning for selecting not only products, but services as well. The purpose of the project is to boost UK's net trade. This can be done by decreasing imports or increasing exports. Since products are often made from imported components, the value in terms net trade from exporting them is partially offset by the import cost of the components. However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
+> In order to test our methodology, we have selected five UK products/services.
 
-<!-- TODO: Why store already exporting via e-commerce would benefit from brick and mortar stores. -->
+* In order to qualify for selection, these products/services must already be successfully exported to the US.
 
-* [Brompton](https://www.brompton.com/)
+  * This may seem counterintuitive, but the purpose is to hone the focus of this project.
 
-* [Rapha](http://www.rapha.cc/us/en_US/)
+  * The goal of the project is to identify prime markets for UK products/services.
+
+  * By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success.
+
+    * These factors include quotas, tariffs, and regulatory compliance.
+
+* We would also like to note our reasoning for selecting not only products, but services as well.
+
+  * The purpose of the project is to boost UK's net trade.
+
+  * This can be done by decreasing imports or increasing exports.
+
+  * Since products are often made from imported components, the value in terms net trade from exporting them is partially offset by the import cost of the components.
+
+  * However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
+
+* For products already exporting to US via e-commerce, it is important that the benefits of a brick and mortar presence are clearly articulated.
+
+  * Potential benefits include exposure in under penetrated markets, the ability to test products, and a sense of instant gratification.
+
+#### Brompton
+
+> [Brompton](https://www.brompton.com/) is a bike company from London that has been hand making their signature foldable bike by hand since 1975. They have recently produced an electric version of their popular bike.
+
+#### Rapha
+
+> [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
 <!-- TODO: Brewery -->
 
@@ -238,28 +266,63 @@
 
 ### System Architecture
 
-> The system will have three primary components: a persistent storage layer, a virtual dataset layer, an analysis layer, and a presentation layer.
+> This distributed system will consist six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow.
 
 ![System Architecture Diagram](./assets/system-architecture-diagram.jpg)
 
+#### Raw Persistent Storage Layer
 
-* Persistent storage will come in a variety of forms depending on the structure of the data source. These potentially include `S3`, `MySQL`, and `Mongo`.
+> The *raw persistent storage layer* is responsible for storing all of the raw data from the various sources listed above.
 
-* Datasets will be *virtualized* using `Dremio`'s open source software. `Dremio` allows you to build virtual datasets that are created from queries on a variety of distinct data sources.
+* This layer consists of many physical data sets in variety of data sources. These data sources could include *S3*, *MySQL*, and/or *Mongo*. These can be local or cloud hosted.
 
-* This virtualized dataset will be an asset for any further analysis on this topic.
+* This collection of data is an asset on its own.
 
-* The analysis layer is described below.
+#### Virtualized Data Layer
 
-### Analysis and Presentation
+> The *virtualized data layer* is responsible for providing an abstraction layer between the physical datasets and the *analysis layer*.
 
-> Analysis and model creation will be done primarily using Python and presentation with Javascript.
+* Datasets will be *virtualized* using *Dremio's* open source software.
 
-* For analysis, libraries such as `pandas`, `numpy`, and `scikit-learn`, as well as `keras` if neural networks are used. Jupyter notebooks will be used. These libraries will be used to build a weak signal analysis module.
+* These *virtual datasets* are the results of queries on the physical datasets as well as other virtual datasets. In all cases the dataset being queried is never modified.
 
-* Heat maps can be produced using the `ArcGIS` Javascript API.
+* This layer will perform any data normalization and cleaning necessary for analysis.
 
-<!-- TODO: add SOM / MdPM here -->
+* This layer of abstraction means that we gain the dual benefit of the physical datasets being an immutable source of truth and the ability to structure the data optimally for analysis.
+
+#### Analysis Layer
+
+> The *analysis layer* is responsible for performing our weak signal analysis.
+
+* This layer will be implemented in *Python*.
+
+* This layer will include our custom weak signal analysis module.
+
+* This layer will leverage such libraries as `pandas`, `numpy`, and `scikit-learn` to perform statistical analysis and machine learning.
+
+* *Jupyter notebooks* will be used to initially explore and implement our methodology.
+
+#### Results Persistent Storage Layer
+
+> The *results persistent storage layer* is responsible for storing the output of our analysis so that it only has to be rerun when either new data is added or the methodology changed.
+
+* The data will be stored with *Mongo* or *Redis*.
+
+#### Presentation Server
+
+> The *presentation server* will be responsible for providing the *presentation client* with access to the necessary data. 
+
+* This layer will be implemented with *Node.js*.
+
+* In particular, this server will be a *GraphQL* server.
+
+#### Presentation Client
+
+> The *presentation client* will be responsible for displaying the relevant results and data to the end consumer.
+
+* This layer will be implemented with *React.js*.
+
+* This layer will take advantage of such libraries as `ArcGis` to produce heat maps.
 
 ## Evaluation
 
