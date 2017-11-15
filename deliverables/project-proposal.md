@@ -42,11 +42,11 @@
 
 * In terms of small and medium size enterprises (SMEs), the UK's share of exports is in the bottom five across Europe [(WorldFirst, 5)](#worldfirst-brexit).
 
-* One of the primary factors deterring UK SMEs from exporting is sense that their product or service will not be suitable for a particular market [(WorldFirst, 6)](#worldfirst-brexit).
+* One of the primary factors deterring UK SMEs from exporting is a sense that their product or service will not be suitable for a particular market [(WorldFirst, 6)](#worldfirst-brexit).
 
-* Although it may be assumed that weakening pound will increase exports, the global nature of UK supply chains combined with the potential for increased tariffs means exporters could become less competitive [(WorldFirst, 12)](#worldfirst-brexit).
+* Although it may be assumed that a weakening pound will increase exports, the global nature of UK supply chains combined with the potential for increased tariffs means exporters could become less competitive [(WorldFirst, 12)](#worldfirst-brexit).
 
-* Due to the price inelasticity of UK goods and services abroad, quality and brand are two of the most important factors in determining their success [(WorldFirst, 12)](#worldfirst-brexit).
+* Due to the price inelasticity of UK goods and services abroad, quality and brand are two of the most important factors in determining SMEs' export success [(WorldFirst, 12)](#worldfirst-brexit).
 
 * More than half of SME exports go to the US [(WorldFirst, 16)](#worldfirst-brexit).
 
@@ -128,17 +128,17 @@
 
   * This can be done by decreasing imports or increasing exports.
 
-  * Since products are often made from imported components, the value in terms net trade from exporting them is partially offset by the import cost of the components.
+  * Since products are often made from imported components, the value in terms of net trade from exporting them is partially offset by the import cost of the components.
 
   * However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
 
-* For products already exporting to US via e-commerce, it is important that the benefits of a brick and mortar presence are clearly articulated.
+* For products already exported to the US via e-commerce, it is important that the benefits of a brick and mortar presence are clearly articulated.
 
-  * Potential benefits include exposure in under penetrated markets, the ability to test products, and a sense of instant gratification.
+  * Potential benefits include exposure in under penetrated markets and the ability to for potential consumers to test products
 
 #### Brompton
 
-> [Brompton](https://www.brompton.com/) is a bike company from London that has been hand making their signature foldable bike by hand since 1975. They have recently produced an electric version of their popular bike.
+> [Brompton](https://www.brompton.com/) is a bike company from London that has been manufacturing their signature foldable bike by hand since 1975. They have also recently produced an electric version of their popular bike.
 
 #### Rapha
 
@@ -146,7 +146,7 @@
 
 <!-- TODO: Brewery -->
 
-<!-- TODO: IT Services -->
+<!-- TODO: IT Services https://dopay.com/ -->
 
 <!-- TODO: Professional Service -->
 
@@ -168,7 +168,7 @@
 
 * [IRS 990 Filings](https://aws.amazon.com/public-datasets/irs-990/) provides data on nonprofit tax filings.
 
-* [Open Address](http://results.openaddresses.io/) provides street names, house numbers, and postal codes that can be combines with geographic coordinates.
+* [Open Address](http://results.openaddresses.io/) provides street names, house numbers, and postal codes that can be combined with geographic coordinates.
 
 * [World Cities Database](https://www.kaggle.com/max-mind/world-cities-database) provides data to convert country and city names to geographic coordinates.
 
@@ -266,7 +266,7 @@
 
 ### System Architecture
 
-> This distributed system will consist six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow.
+> This distributed system will consist of six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow.
 
 ![System Architecture Diagram](./assets/system-architecture-diagram.jpg)
 
@@ -274,7 +274,7 @@
 
 > The *raw persistent storage layer* is responsible for storing all of the raw data from the various sources listed above.
 
-* This layer consists of many physical data sets in variety of data sources. These data sources could include *S3*, *MySQL*, and/or *Mongo*. These can be local or cloud hosted.
+* This layer consists of many physical datasets in a variety of data sources. These data sources could include *S3*, *MySQL*, and/or *Mongo*. These can be local or cloud hosted.
 
 * This collection of data is an asset on its own.
 
@@ -310,7 +310,7 @@
 
 #### Presentation Server
 
-> The *presentation server* will be responsible for providing the *presentation client* with access to the necessary data. 
+> The *presentation server* will be responsible for providing the *presentation client* with access to the necessary data.
 
 * This layer will be implemented with *Node.js*.
 
@@ -322,7 +322,7 @@
 
 * This layer will be implemented with *React.js*.
 
-* This layer will take advantage of such libraries as `ArcGis` to produce heat maps.
+* This layer will take advantage of such libraries as `ArcGIS` to produce heat maps.
 
 ## Evaluation
 
@@ -330,7 +330,7 @@
 
 * To what extent are the indicators our methodology produces valuable in identifying potential markets for UK products in the US?
 
-  * Backtesting could be used verify the value of the indicators we produce. This would require acquiring granular export data for one of a product/service. We could then analyze the correlation between our indicators and the success of a product/service in various markets.
+  * Backtesting could be used verify the value of the indicators we produce. This would require acquiring granular export data for one of the products/services. We could then analyze the correlation between our indicators and the success of a product/service in various markets.
 
 * To what extent is the design of our systematic weak signal analysis flexible enough to be used to address different goals?
 
