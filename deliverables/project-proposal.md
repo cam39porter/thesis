@@ -144,12 +144,6 @@
 
 > [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
-* [London Tea Company](https://www.londontea.co.uk/)
-
-* [Anima Vinci](https://animavinci.com/)
-
-* [London Distillery](https://www.londondistillery.com/story)
-
 <!-- TODO: Brewery -->
 
 <!-- TODO: IT Services https://dopay.com/ -->
@@ -301,7 +295,7 @@
 
 ### System Architecture
 
-> This distributed system will consist of six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow.
+> This distributed system will consist of six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow. These layers of abstraction allow for individual components within layers to be upgraded or modified without affecting the functionality of other layers. This decoupling allows for different individuals to work such things as data sourcing, indicator creation, algorithmic implementation, and presentation in parallel.
 
 ![System Architecture Diagram](./assets/system-architecture-diagram.jpg)
 
