@@ -146,6 +146,9 @@
 
 > [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
+#### Rest
+
+> The rest of the products/services will be identified using the *London Stock Exchange's* ["2017 REPORT - 1000 COMPANIES UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
 
 ### Datasets
 
