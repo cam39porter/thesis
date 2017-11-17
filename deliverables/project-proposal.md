@@ -84,7 +84,7 @@
 
 * Unlike other methodologies that focus on the volume/value of data, we will be focusing on using data from a variety of sources (satellite imagery, amount of bike friendly lanes, number of Starbucks, average income, etc.). From this variety, we will inevitably find proxy measures that though not causal, are nonetheless predictive of what we are interested in.
 
-* Much like in *ensemble learning* where a set of *weak learners* are used in conjunction to produce a strong model, we believe that by integrating weak signals from a variety of datasets, we can eliminate noise to capture subtle but powerful indicators. These indicators would otherwise be overlooked by methodologies not focused on the complex interplay that creates the salient characteristics of ecosystems.
+* Much like in *ensemble learning* where a set of *weak learners* are used in conjunction to produce a strong model, we believe that by integrating weak signals from a variety of data sources, we can eliminate noise to capture subtle but powerful indicators. These indicators would otherwise be overlooked by methodologies not focused on the complex interplay that creates the salient characteristics of ecosystems.
 
 * In order to effectively carry out this methodology, we must recognize that we are no longer data limited, but analysis limited. However since the methodology is quantitative, we can design systems to carry it out on our behalf.
 
@@ -95,6 +95,8 @@
   1. It must be able to dynamically integrate new data sources.
 
 * Using a variety of data sources, weak signal analysis, and an automated system, we hope to be able to create heat maps identifying potential markets for UK products.
+
+  * The raw output of our methodology will be a probabilistic value best represented as a confidence interval.
 
 ### Taxonomy
 
@@ -144,17 +146,16 @@
 
 > [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
-<!-- TODO: Brewery -->
-
-<!-- TODO: IT Services https://dopay.com/ -->
-
-<!-- TODO: Professional Service -->
-
-<!-- TODO: Online educational services -->
 
 ### Datasets
 
-> We have already identified a number of potential data sets from a variety of providers including, Princeton, Kaggle, Amazon, Uber, and the US Government. Each of these datasets has a location attribute. What follows is a selection of them.
+> We have already identified a number of potential data sources from a variety of providers including, Princeton, Kaggle, Amazon, Uber, and the US Government. Each of these datasets has a location attribute. What follows is a selection of them.
+
+* *Data sources* will refer to raw data from a provider.
+
+* *Data sets* will refer to raw data that has been cleaned (eg. normalized, standardized, and/or aggregated).
+
+<!-- TODO: define *Data types* -->
 
 #### Census
 
@@ -274,6 +275,8 @@
 
 * The indicators that we find most useful will most likely be ratios that adjust for population, gender disparity, income level, and education level.
 
+  * Since many indicators will be ratios adjusting for population density, gender, age, education, and income, it should be possible to programmatically generate these.
+
 * The development of indicators follows an exploratory. As we run our correlation analysis and discover relationships, we likely be inspired to create more indicators. The more indicators we create, the greater the potential for capturing the underlying relationships that drive ecosystem level insights.
 
 * Indicators will be grouped into *buckets*. Some example buckets could be "health", "education", "economics", "infrastructure", "demographics", or "culture".
@@ -295,7 +298,7 @@
 
 ### System Architecture
 
-> This distributed system will consist of six layers. There is one way data flow from the physical datasets to the UI the consumer interacts with. Each layer is responsible for one logical component in the data flow. These layers of abstraction allow for individual components within layers to be upgraded or modified without affecting the functionality of other layers. This decoupling allows for different individuals to work such things as data sourcing, indicator creation, algorithmic implementation, and presentation in parallel.
+> This distributed system will consist of six layers. Each layer is responsible for one logical component in the data flow. These layers of abstraction allow for individual components within layers to be upgraded or modified without affecting the functionality of other layers. This decoupling allows for different individuals to work such things as data sourcing, indicator creation, algorithmic implementation, and presentation in parallel.
 
 ![System Architecture Diagram](./assets/system-architecture-diagram.jpg)
 
@@ -304,6 +307,10 @@
 > The *raw persistent storage layer* is responsible for storing all of the raw data from the various sources listed above.
 
 * This layer consists of many physical datasets in a variety of data sources. These data sources could include *S3*, *MySQL*, and/or *Mongo*. These can be local or cloud hosted.
+
+* This layer will also store data from the businesses on product/service performance in various markets. This data does not have to exist at the offset, but can be incorporated later. This could either be included in the unsupervised learning methodology we call weak signal analysis or used to augment it using supervised learning. This data helps create the feedback loop that ensures that the system is always improving.
+
+* Where possible, physical datasets will be dynamically updated with new data from their source. This could be done via polling the source or webhooks.
 
 * This collection of data is an asset on its own.
 
@@ -320,6 +327,8 @@
 * This layer of abstraction means that we gain the dual benefit of the physical datasets being an immutable source of truth and the ability to structure the data optimally for analysis.
 
 * This layer will be where new indicators are created from the physical datasets. These indicators will be stored in a *space*, a logical grouping of virtual datasets in Dremio.
+
+* Dremio provides a *graphical user interface* (GUI) to make the process of creating virtual datasets straightforward.
 
 #### Analysis Layer
 
@@ -363,6 +372,10 @@
 
   * SOMs can allow you to visualize high dimensional data in a lower dimensional space. We could thus use SOMs with our suite of indicators to produce visualizations that allow for consumers to have an intuitive understanding of the reasoning behind market recommendations.
 
+* From this layer, a user will also be able to update the hyperparameters in the analysis layer.
+
+  * Hyperparameters could range from the number of layers in a neural network to the threshold *R squared* value for indicator inclusion.
+
   <!-- TODO: add notes on MdPM if used -->
 
 ## Evaluation
@@ -375,7 +388,7 @@
 
 * To what extent is the design of our systematic weak signal analysis flexible enough to be used to address different goals?
 
-  * Answering this question will likely require a more qualitative analysis. Factors such as ease of integrating new datasets and ease of producing new indicators should be considered.
+  * Answering this question will likely require a more qualitative analysis. Factors such as ease of integrating new data sources and ease of producing new indicators should be considered.
 
 ## Bibliography
 
