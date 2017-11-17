@@ -148,7 +148,7 @@
 
 #### Rest
 
-> The rest of the products/services will be identified using the *London Stock Exchange's* ["2017 REPORT - 1000 COMPANIES UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
+> The rest of the products/services will be identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
 
 ### Datasets
 
