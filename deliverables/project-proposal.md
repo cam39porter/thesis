@@ -106,7 +106,7 @@
 
 > This section describes the algorithm behind the methodology in mathematical form.
 
-<!-- TODO: add SOM / MdPM here -->
+<!-- TODO: add SOM / MdPM here as providing ability to assess value of output visually -->
 
 ## Plan
 
@@ -138,17 +138,85 @@
 
   * Potential benefits include exposure in under penetrated markets and the ability to for potential consumers to test products
 
-#### Brompton
+#### Ideas
+
+> The following products/services were identified from personal knowledge.
+
+##### Cycling
+
+###### Brompton
 
 > [Brompton](https://www.brompton.com/) is a bike company from London that has been manufacturing their signature foldable bike by hand since 1975. They have also recently produced an electric version of their popular bike.
 
-#### Rapha
+###### Rapha
 
 > [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
-#### Rest
+#### London Stock Exchange *2017 Report - 1000 Companies UK*
 
 > The rest of the products/services will be identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
+
+##### [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+
+###### Creature London
+
+> [Creature London](https://www.creaturelondon.com/content/about) is a British add agency whose tag line is "breaking the rules, in the right way, for the right reasons". Although they do not have any clients currently in US. This could be an interesting service to explore.
+
+###### the7stars
+
+> [the7stars](http://www.the7stars.co.uk/) is the largest independent media planning and buying agency in the UK. It also already has US clients like the PGA tour and TLC.
+
+###### [Amplify](https://www.lseg.com/resources/1000-companies-inspire-britain/amplify)
+
+> [Amplify](http://www.weareamplify.com/) are focused on bespoke marketing campaigns that put emotional experiences at center by engaging with culture that people identify with.
+
+##### [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* 96% of food and drink businesses that are micro to medium-sized
+
+* In 2015, £580 million worth of chocolate was exported from the UK.
+
+###### [Belvoir Fruit Farms](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/belvoir-fruit-farms)
+
+> [Belvoir](https://www.belvoirfruitfarms.co.uk/about-us/) make a range of premium soft drinks that are handmade and bottled on the farm using as many UK ingredients as possible. Exports around the world currently account for around 16% of their sales.
+
+###### [Pipers Crisp](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/pipers-crisps)
+
+> [Pipers Crisp](http://www.piperscrisps.com/) was started in 2004 and now sells their locally sourced potatoes in 30 countries world wide. They invest heavily in new equipment and attempt to match new chip flavors to emerging trends in consumption.
+
+###### [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree)
+
+> [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree) has become the world's leading supplier of premium natural mixers for alcoholic drinks by retail sale value. Today they sell to hotels, bars, restaurants, and cafes in 65 countries. The seek to capture the trend towards "premiumisation". Two thirds of their sales in 2015 came from abroad, with much of that being in the US.
+
+###### [Chapel Down](https://www.lseg.com/resources/1000-companies-inspire-britain/chapel-down)
+
+> [Chapel Down](https://www.chapeldown.com/) raised crowd funding expectation when it raised £3.95m in ten days. They offer a world-class range of sparkling and still wines, alongside an award-winning range of Curious beers and ciders.
+
+###### [Brew Dog](https://www.lseg.com/resources/1000-companies-inspire-britain/brewdog)
+
+> [Brew Dog](https://www.brewdog.com/) is a craft brewery that sells its beer in its own bars and bottle shops. In 2010 they started "Equity for Punks" and have raised £20 million in crowd funding. In the summer of 2016 they opened a brewery in Columbus, Ohio to bring the beer to people across the US.
+
+##### [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+###### [Golden Bear](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/golden-bear)
+
+> [Golden Bear](www.goldenbeartoys.com) produces high quality plush and plastic toys for children. They recently obtained the worldwide rights for a new property that will allow for further export expansion.
+
+###### [Monica Vinader](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/monica-vinader)
+
+> [Monica Vinader](https://www.monicavinader.com/us/stockists/uk) is a UK based jewelry brand known for the their high quality at a reasonable price point. THey are looking to expand globally into brick and mortar stores beyond their e-commerce presence. This includes opening a flagship store in New York.
+
+##### [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
+
+* 45% of UK exports are from manufacturing
+
+###### [Gtech](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering/gtech)
+
+> [Gtech](https://www.gtech.co.uk/) designs and sells cordless appliances including electric bikes. They have 22 million units in 19 different countries since they were founded in 2001.
+
+###### [Kromek Group](https://www.kromek.com/)
+
+> [Kromek Group] builds medical imaging, security screening, and nuclear detection devices. They have a built a mobile commercial radiation detection device and have been awarded a sole supplier contract by DARPA (Defense Advanced Research Projects Agency).
 
 ### Datasets
 
