@@ -166,7 +166,7 @@
 
 > This section lays out the components of our methodology in a schematic form. These components can be evaluated quantitatively and assigned a value. The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression for market opportunity.
 
-![Schematic Taxonomy](./assets/schematic-taxonomy.jpg)
+![Schematic Taxonomy](./assets/schematic-taxonomy.svg)
 
 * Factors are multiplicative, as a reduction of any factor to zero (e.g. removing it entirely) reduces the potential value of the target market to zero.
 
@@ -455,7 +455,7 @@
 
 > This distributed system will consist of six layers. Each layer is responsible for one logical component in the data flow. These layers of abstraction allow for individual components within layers to be upgraded or modified without affecting the functionality of other layers. This decoupling allows for different individuals to work such things as data sourcing, indicator creation, algorithmic implementation, and presentation in parallel.
 
-![System Architecture Diagram](./assets/system-architecture-diagram.jpg)
+![System Architecture Diagram](./assets/system-architecture-diagram.svg)
 
 #### Raw Persistent Storage Layer
 
