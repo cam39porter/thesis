@@ -86,7 +86,11 @@
 
 * Much like in *ensemble learning* where a set of *weak learners* are used in conjunction to produce a strong model, we believe that by integrating weak signals from a variety of data sources, we can eliminate noise to capture subtle but powerful indicators. These indicators would otherwise be overlooked by methodologies not focused on the complex interplay that creates the salient characteristics of ecosystems.
 
+* "Every community and enterprise has a complex mosaic of characteristics derived from the demographics, environmental resources, geographical location, economic activity, socio-cultural landscape, etc. that define a unique environment.  These characteristics are reflected in census data, transactions, survey data, remote imagery, and many other datasets.  While these datasets may be of varying quality and completeness, each has the potential of carrying information that reflects the crime, either by itself, or more commonly through combination with other datasets." [Novametrics, 1](#novametrics-trafficking)
+
 * In order to effectively carry out this methodology, we must recognize that we are no longer data limited, but analysis limited. However since the methodology is quantitative, we can design systems to carry it out on our behalf.
+
+* "In many areas, we are no longer data limited.  We can go beyond the resolution of traditional data analysis, identifying diagnostic “signals” in what was previously considered “noise,” to improve estimates of prevalence, identify underlying causal relationships, and optimize return on investment (ROI)" [Novametrics, 2](#novametrics-trafficking)
 
 * The system we design will have three key features.
 
@@ -96,11 +100,77 @@
 
 * Using a variety of data sources, weak signal analysis, and an automated system, we hope to be able to create heat maps identifying potential markets for UK products.
 
-  * The raw output of our methodology will be a probabilistic value best represented as a confidence interval.
+  * The raw output of our methodology will be a probabilistic value best represented as a confidence interval
+
+### Analytical Approach
+
+> The application of weak signal analysis to big data is used identify characteristics predictive of outcomes, and to reveal underlying causal relationships. The weak signal approach to big data finds inter-relationships among multiple variables. With many variables and many distinct markets, there may be multiple independent linkages. Multiple independent linkages indicate the potential value of a market has multiple causes; and the causes have different relative priority in different locations. Previously hypothesized relationships may be confirmed, but unexpected relationships are more common. It is the unexpected relationships that lead to a more sophisticated understanding, and in turn, offer opportunities for more nuanced and effective interventions. [Novametrics, 6](#novametrics-trafficking)
+
+* Identifying target markets can be classified as a wicked problem - the type of problem that defies a single solution and is characterized by a myriad of dynamically interconnected variables [(Novametrics, 2)](#novametrics-trafficking)
+
+  * The original use of the term "wicked problem" is attributed to design theorist Horst Rittel.
+
+  * "Examples of “wicked problems” include reducing poverty, stopping outbreaks of civil violence, and mitkigating natural disasters.  Wicked problems occur in complex systems, where causal relationships are not direct, and where the circumstances that foster the problem vary from location to location." [(Novametrics, 2)](#novametrics-trafficking)
+
+* The concept of data stacking is important for understanding weak signal analysis. It is illustrated by the two astronomical images in the figure following. The picture on the left is a single image. The picture on the right is the combination of 27 images of the same object – mathematically stacked one on top of the other. The composite of 27 images provides greater resolution and therefore a more accurate picture than any of the single images.   In data processing terminology, we are able to amplify the “weak signals” and suppress the “noise”. The weak signals (small-scale physical features of the planet) are present in the individual images but they cannot be seen because of the blurriness of the picture. The blurriness, or noise, is caused by atmospheric refraction, vibrations of the telescope, etc. and varies randomly in each of the images. When 27 of the images are stacked upon each other, the random noise cancels itself out and the signals co-add among the images.  The result is an enhancement of the signal relative to the noise [(Novametrics, 15)](#novametrics-trafficking).
+
+![Saturn Data Stacking](./assets/saturn-images.png)
+
+#### Correlation Analysis
+
+> In our holistic ecosystem-approach, correlations can indicate predictive relationships. The analysis remains agnostic about the form of the relationship and does not assume correlation implies causation (*“cum hoc ergo propter hoc”*) [(Novametrics, 7)](#novametrics-trafficking).
+
+* Consider two market characteristics `A` and `B`.
+
+  1. The correlation is the result of random coincidence and does not reveal any causal relationships between `A` and `B`.
+
+  1. A is “causing” `B`, with the independent variable `A` causing the change in the dependent variable `B`.
+
+  1. `B` is “causing” `A`, with the independent variable `B` causing the change in the dependent variable `A`.
+
+  1. `A` and `B` are both dependent variables, both following an independent market characteristic `C` that has not been measured.
+
+  1. `A` and `B` are part of a larger correlated system with no unique causal factor, that is, no independent variable.
+
+  * This final option is characteristic of “coupled systems” in physics, in which “causality” resides in the linkages between variables. In a fully coupled “holistic” system, no variable is truly independent. Such systems are common in the natural environment.  For example, in atmosphere-ocean interactions that lead to the El Niño and La Niña climate events, there are no dependent vs. independent variables. Atmospheric pressure highs and lows induce winds that push surface seawater, and warm and cool patches of the sea surface induce variations in atmospheric pressure. Neither the atmosphere nor the ocean operates independently of the other. Neither can be taken as the independent variable in a causal relationship. Yet the relationship is unambiguous and allows us to predict both the atmospheric and oceanic effects with high degrees of certainty [(Novametrics, 16-17)](#novametrics-trafficking).
+
+* We assume wicked problems are produced by coupled systems.
+
+#### Factor Analysis
+
+> Factor Analysis is used to identify the main factors that contribute to the variability of the data. Weightings for each of the factors are quantitatively determined through regression analysis. Composite measures are developed using indicators identified through the factor analysis with weightings derived from the regression analysis [(Novametrics, 7)](#novametrics-trafficking).
+
+* There are two types of factor analysis [(Novametrics, 17)](#novametrics-trafficking).
+
+  * *Confirmatory analysis* tests a hypothesis that the data can be organized into a number of factors.
+
+  * *Exploratory analysis* derives factors without knowing how many “buckets” they might fall into.
+
+  * We are using exploratory factor analysis, because we do not have a preconceived notion as to how many factors will be most salient in the dataset.  Exploratory factor analysis makes no initial assumptions about existing relationships of the factors.
+
+* If the objective is to represent a large dataset with a just a few indicators, Principal Component Analysis (PCA) can be used to identify the variables that are responsible for the greatest variation in the data. As with the correlation matrix, PCA is in some sense, removing the data that are redundant. PCA assumes that much of the data are correlated.  In fact, if the indicators being used are not correlated, the analysis will not be useful [(Novametrics, 17)](#novametrics-trafficking).
+
+* Factors are based on covariance. A factor is not an indicator. It is based on running covariances on all of the indicators and coming up with the factors that bundle together certain indicators at certain weights.  The factors make up the total variance of all the indicators [(Novametrics, 17)](#novametrics-trafficking).
+
+* The *scree* plot is a two dimensional graph with factors on the x-axis and *eigenvalues* on the y-axis.
+
+  * Eigenvalues represent the variance accounted for by underlying factors.
+
+  * The scree plot is used to select factors that account for the majority of the variance.
+
+* Indicators are extracted from the factors by determining which of the indicators are responsible for the factors selected.
+
+* Weightings for the indicators can be determined through regression. The p-value can be used to determine a weight that represents each indicator's correlation with the outcome.
 
 ### Taxonomy
 
-> This section lays out the components of our methodology in a schematic form.
+> This section lays out the components of our methodology in a schematic form. These components can be evaluated quantitatively and assigned a value. The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression for market opportunity.
+
+![Schematic Taxonomy](./assets/schematic-taxonomy.jpg)
+
+* Factors are multiplicative, as a reduction of any factor to zero (e.g. removing it entirely) reduces the potential value of the target market to zero.
+
+* Each of the factors contain multiple terms. These terms are additive.
 
 ### Algorithm
 
@@ -340,7 +410,7 @@
 
 ### Indicators
 
-> *Indicators* are arbitrary combinations of attributes from the physical datasets.
+> *Indicators* are arbitrary combinations of attributes from the physical datasets. Indicators are removed if they are judged to have inadequate coverage or are obviously redundant with other indicators that have greater distribution.
 
 * Some example indicators could be "male population as a percentage of total population" or "number of Starbucks per kilometer".
 
@@ -366,6 +436,20 @@
 }
 
 ```
+
+#### Standardization
+
+> Because the analysis includes comparisons, we “standardize” the data.  For the purposes of our analysis, we refer to standardizing data as providing a common reference. Whenever we have a measure, we determine how that measure should be standardized so that it can be compared from one location to another.  The standardization process may include weightings [(Novametrics, 5)](#novametircs-trafficking).
+
+#### Vectorization
+
+> While the various indicator measures provide a “magnitude” they typically do not provide a “direction.”  We therefore provide a direction to the value based on the how the indicators will be compiled.  In most cases, this step requires adjusting as a reciprocal or an inverse. For instance, high crime rates are considered a negative feature, while high income levels are considered a positive feature.  We might therefore align the direction of the indicator measures by multiplying all values of one of the indicator measures by -1 [(Novametrics, 6)](#novametircs-trafficking).
+
+#### Normalization
+
+> Because our goal is to perform statistical analysis that combines different types of data, we translate the units and scales of the indicators into a common form of measurement by normalizing. If the data present a normal or log-normal distribution, we normalize the data for each indicator using the deviations from the norm. If the data distribution does not follow a normal distribution or exhibits natural breaks, we use percentile ranking or assign values to each grouping [(Novametrics, 6)](#novametircs-trafficking).
+
+* If the data follows a normal distribution, we can normalize the data for each indicator using the deviations from the norm - also called the *Z score*.
 
 ### System Architecture
 
@@ -455,7 +539,9 @@
 
 * To what extent are the indicators our methodology produces valuable in identifying potential markets for UK products in the US?
 
-  * Backtesting could be used verify the value of the indicators we produce. This would require acquiring granular export data for one of the products/services. We could then analyze the correlation between our indicators and the success of a product/service in various markets.
+  * Hindcasting could be used verify the value of the indicators we produce. This would require acquiring granular export data for one of the products/services. We could then analyze the correlation between our indicators and the success of a product/service in various markets.
+
+  * Ground truthing could also be used to evaluate the predictive power of our methodology. Ground truthing is performed by applying the analysis to different areas and evaluating the predictive success [(Novametricsm 7)](#novametrics-trafficking).
 
 * To what extent is the design of our systematic weak signal analysis flexible enough to be used to address different goals?
 
@@ -477,4 +563,4 @@
 
 * <a id='kohonen-soms' href='http://www.springer.com/us/book/9783540679219'>Kohonen, Teuvo. Self-organizing maps. Berlin New York: Springer, 2001. Print.</a>
 
-<a id='' href=''></a>
+* <a id='novametrics-trafficking' href=''>"Use of Big Data and Weak-Signal Analysis to Counter Human Trafficking and Illegal, Unreported, Unregulated (IUU) Fishing". Novametrics. November 2017. Print.</a>
