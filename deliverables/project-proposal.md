@@ -52,26 +52,6 @@
 
 * "SMEs in the IT and Communications sectors are much more likely to have plans to export (23% had such plans). Similarly, across the Professional and Scientific Service industries, 11% of SMEs said that they have such plans. This still leaves a considerable number of businesses across the UK with no intention to export" [(WorldFirst, 19)](#worldfirst-brexit).
 
-### Market Segmentation
-
-> *Market segmentation* describes the process of dividing potential consumers into particular groups based on shared characteristics. The characteristics shared by certain segments will make them in expectation a better *target market*. There are different types of market segmentation. Ours falls into the category of *geodemographic segmentation*. Our system can be considered a *geographic information system*.
-
-* [(Grekousis)](#grekousis-segmentation)
-
-* [Esri Demographics](http://www.esri.com/data/esri_data)
-
-* [PSYTE HD: Market segmentation system for Canada](https://www.pitneybowes.com/us/data/demographic-data/psyte-hd-canada.html)
-
-### Weak Signal Analysis
-
-> There are *five V's* of big data: volume, velocity, variety, variability, and value [(Jain)](#jain-data). Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators. *Strong signals*, by contrast, arise from a single source. The result of our weak signal analysis will be a suite of indicators, no one of which is predictive of our desired output, but in combination provide valuable insight.
-
-* [How to Make Sense of Weak Signals](http://sloanreview.mit.edu/article/how-to-make-sense-of-weak-signals/)
-
-* [The strategic strength of weak signal analysis](http://www.sciencedirect.com/science/article/pii/S0016328711002564)
-
-* [The strongness of weak signals: self-reference and paradox in anticipatory systems](https://link.springer.com/article/10.1007/s40309-016-0085-1)
-
 ## Approach
 
 ### Conceptual Framework
@@ -101,6 +81,16 @@
 * Using a variety of data sources, weak signal analysis, and an automated system, we hope to be able to create heat maps identifying potential markets for UK products.
 
   * The raw output of our methodology will be a probabilistic value best represented as a confidence interval
+
+### Weak Signal Analysis
+
+> There are *five V's* of big data: volume, velocity, variety, variability, and value [(Jain)](#jain-data). Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators. *Strong signals*, by contrast, arise from a single source. The result of our weak signal analysis will be a suite of indicators, no one of which is predictive of our desired output, but in combination provide valuable insight.
+
+* [How to Make Sense of Weak Signals](http://sloanreview.mit.edu/article/how-to-make-sense-of-weak-signals/)
+
+* [The strategic strength of weak signal analysis](http://www.sciencedirect.com/science/article/pii/S0016328711002564)
+
+* [The strongness of weak signals: self-reference and paradox in anticipatory systems](https://link.springer.com/article/10.1007/s40309-016-0085-1)
 
 ### Analytical Approach
 
@@ -184,6 +174,38 @@
 
 > In order to test our methodology, we have selected five UK products/services.
 
+* According to the [European Union (EU)](http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition_en), whom the UK are still a part of as of this writing, an SME is defined as follows:
+
+  1. The staff head count must be below the given number.
+
+  1. Either the turnover or the balance sheet must be below the given number.
+
+| Company Category | Staff Headcount | Turnover     | Balance Sheet |
+| :--------------- | :-------------: | :----------: | :-----------: |
+| **Medium**       | < 250           | < 50 m euros | < 43 m euros  |
+| **Small**        | < 50            | < 10 m euros | < 10 m euros  |
+| **Micro**        | < 10            | < 2 m euros  | < 2 m euros   |
+
+* According to the UK's HM Revenue and Customs an SME is any company that meets the following criteria:
+
+  1. Less then 500 staff
+
+  1. Turnover of less than 100 million euros or a balance sheet under 86 million euros.
+
+  * These SMEs can get Corporation Tax relief for expenditure on research and development
+
+* As you can see there are multiple definitions of SMEs. For the purposes of this study we are going to be focusing on medium sized enterprises.
+
+  * We will define a medium sized enterprise as one with greater than 50 employees, and a balance sheet of 10-86 million euros or turnover of 10-100 million euros.
+
+  * We are going to focus on medium sized enterprises for two reasons.
+
+    1. Small enterprise exports are too small.
+
+    1. Large enterprises are already exporting in large quantities.
+
+    <!-- Add citation or numbers from World First thinking global report -->
+
 * In order to qualify for selection, these products/services must already be successfully exported to the US.
 
   * This may seem counterintuitive, but the purpose is to hone the focus of this project.
@@ -204,89 +226,149 @@
 
   * However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
 
+  <!-- Delete this section if only products are selected -->
+
 * For products already exported to the US via e-commerce, it is important that the benefits of a brick and mortar presence are clearly articulated.
 
   * Potential benefits include exposure in under penetrated markets and the ability to for potential consumers to test products
 
-#### Ideas
+* Products/services were primarily identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
 
-> The following products/services were identified from personal knowledge.
+* The following list is ordered in terms likely hood to be included in our final analysis
 
-##### Cycling
+---
 
-###### Brompton
+#### [Brew Dog](https://www.lseg.com/resources/1000-companies-inspire-britain/brewdog)
+
+> [Brew Dog](https://www.brewdog.com/) is a craft brewery that sells its beer in its own bars and bottle shops. In 2010 they started "Equity for Punks" and have raised £20 million in crowd funding. In the summer of 2016 they opened a brewery in Columbus, Ohio to bring the beer to people across the US.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* [Crunchbase](https://www.crunchbase.com/organization/brewdog)
+
+* According to [Craft](https://craft.co/brewdog), Brompton has 395 employees and 24.3 million pounds in current assets as of 2016
+
+---
+
+#### Brompton
 
 > [Brompton](https://www.brompton.com/) is a bike company from London that has been manufacturing their signature foldable bike by hand since 1975. They have also recently produced an electric version of their popular bike.
 
-###### Rapha
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+* [Crunchbase](https://www.crunchbase.com/organization/brompton-bicycle)
+
+* According to [Craft](https://craft.co/brompton-bicycle), Brompton has 130 employees and 12.1 million pounds in current assets as of 2016
+
+---
+
+#### Rapha
 
 > [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
 
-#### London Stock Exchange *2017 Report - 1000 Companies UK*
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
 
-> The rest of the products/services will be identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
+* 251 to 1000 employees according to [Crunchbase](https://www.crunchbase.com/organization/rapha)
 
-##### [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+* According to [Craft](https://craft.co/rapha), Rapha has 361 employees and 30 million pounds in current assets
 
-###### Creature London
+---
+
+#### [Chapel Down](https://www.lseg.com/resources/1000-companies-inspire-britain/chapel-down)
+
+> [Chapel Down](https://www.chapeldown.com/) raised crowd funding expectation when it raised £3.95m in ten days. They offer a world-class range of sparkling and still wines, alongside an award-winning range of Curious beers and ciders.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* As of fiscal year 2016, Chapel down had 8.5 million pounds in total assets according to [Craft](https://craft.co/chapel-down-group)
+
+---
+
+#### [Belvoir Fruit Farms](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/belvoir-fruit-farms)
+
+> [Belvoir](https://www.belvoirfruitfarms.co.uk/about-us/) make a range of premium soft drinks that are handmade and bottled on the farm using as many UK ingredients as possible. Exports around the world currently account for around 16% of their sales.
+
+* According to [Craft](https://craft.co/rapha), Belvoir Fruit Farms has 50 employees
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+---
+
+#### [Monica Vinader](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/monica-vinader)
+
+> [Monica Vinader](https://www.monicavinader.com/us/stockists/uk) is a UK based jewelry brand known for the their high quality at a reasonable price point. THey are looking to expand globally into brick and mortar stores beyond their e-commerce presence. This includes opening a flagship store in New York.
+
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+* 51 to 100 employees according to [Crunchbase](https://www.crunchbase.com/organization/monica-vinader)
+
+---
+
+#### [Pipers Crisp](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/pipers-crisps)
+
+> [Pipers Crisp](http://www.piperscrisps.com/) was started in 2004 and now sells their locally sourced potatoes in 30 countries world wide. They invest heavily in new equipment and attempt to match new chip flavors to emerging trends in consumption.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+---
+
+#### [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree)
+
+> [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree) has become the world's leading supplier of premium natural mixers for alcoholic drinks by retail sale value. Today they sell to hotels, bars, restaurants, and cafes in 65 countries. The seek to capture the trend towards "premiumisation". Two thirds of their sales in 2015 came from abroad, with much of that being in the US.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* 11 to 50 employees according to [Crunchbase](Fever Tree)
+
+---
+
+#### [Golden Bear](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/golden-bear)
+
+> [Golden Bear](www.goldenbeartoys.com) produces high quality plush and plastic toys for children. They recently obtained the worldwide rights for a new property that will allow for further export expansion.
+
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+---
+
+#### [Gtech](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering/gtech)
+
+> [Gtech](https://www.gtech.co.uk/) designs and sells cordless appliances including electric bikes. They have 22 million units in 19 different countries since they were founded in 2001.
+
+* [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
+
+---
+
+#### Creature London
 
 > [Creature London](https://www.creaturelondon.com/content/about) is a British add agency whose tag line is "breaking the rules, in the right way, for the right reasons". Although they do not have any clients currently in US. This could be an interesting service to explore.
 
-###### the7stars
+* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+
+---
+
+#### the7stars
 
 > [the7stars](http://www.the7stars.co.uk/) is the largest independent media planning and buying agency in the UK. It also already has US clients like the PGA tour and TLC.
+
+* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+
+---
 
 ###### [Amplify](https://www.lseg.com/resources/1000-companies-inspire-britain/amplify)
 
 > [Amplify](http://www.weareamplify.com/) are focused on bespoke marketing campaigns that put emotional experiences at center by engaging with culture that people identify with.
 
-##### [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
 
-* 96% of food and drink businesses that are micro to medium-sized
+---
 
-* In 2015, £580 million worth of chocolate was exported from the UK.
-
-###### [Belvoir Fruit Farms](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/belvoir-fruit-farms)
-
-> [Belvoir](https://www.belvoirfruitfarms.co.uk/about-us/) make a range of premium soft drinks that are handmade and bottled on the farm using as many UK ingredients as possible. Exports around the world currently account for around 16% of their sales.
-
-###### [Pipers Crisp](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/pipers-crisps)
-
-> [Pipers Crisp](http://www.piperscrisps.com/) was started in 2004 and now sells their locally sourced potatoes in 30 countries world wide. They invest heavily in new equipment and attempt to match new chip flavors to emerging trends in consumption.
-
-###### [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree)
-
-> [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree) has become the world's leading supplier of premium natural mixers for alcoholic drinks by retail sale value. Today they sell to hotels, bars, restaurants, and cafes in 65 countries. The seek to capture the trend towards "premiumisation". Two thirds of their sales in 2015 came from abroad, with much of that being in the US.
-
-###### [Chapel Down](https://www.lseg.com/resources/1000-companies-inspire-britain/chapel-down)
-
-> [Chapel Down](https://www.chapeldown.com/) raised crowd funding expectation when it raised £3.95m in ten days. They offer a world-class range of sparkling and still wines, alongside an award-winning range of Curious beers and ciders.
-
-###### [Brew Dog](https://www.lseg.com/resources/1000-companies-inspire-britain/brewdog)
-
-> [Brew Dog](https://www.brewdog.com/) is a craft brewery that sells its beer in its own bars and bottle shops. In 2010 they started "Equity for Punks" and have raised £20 million in crowd funding. In the summer of 2016 they opened a brewery in Columbus, Ohio to bring the beer to people across the US.
-
-##### [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
-
-###### [Golden Bear](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/golden-bear)
-
-> [Golden Bear](www.goldenbeartoys.com) produces high quality plush and plastic toys for children. They recently obtained the worldwide rights for a new property that will allow for further export expansion.
-
-###### [Monica Vinader](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/monica-vinader)
-
-> [Monica Vinader](https://www.monicavinader.com/us/stockists/uk) is a UK based jewelry brand known for the their high quality at a reasonable price point. THey are looking to expand globally into brick and mortar stores beyond their e-commerce presence. This includes opening a flagship store in New York.
-
-##### [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
-
-* 45% of UK exports are from manufacturing
-
-###### [Gtech](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering/gtech)
-
-> [Gtech](https://www.gtech.co.uk/) designs and sells cordless appliances including electric bikes. They have 22 million units in 19 different countries since they were founded in 2001.
-
-###### [Kromek Group](https://www.kromek.com/)
+#### [Kromek Group](https://www.kromek.com/)
 
 > [Kromek Group] builds medical imaging, security screening, and nuclear detection devices. They have a built a mobile commercial radiation detection device and have been awarded a sole supplier contract by DARPA (Defense Advanced Research Projects Agency).
+
+* [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
+
+---
 
 ### Datasets
 
@@ -436,6 +518,8 @@
 }
 
 ```
+
+* The process of indicator creation will be transparent and reproducible.
 
 #### Standardization
 
