@@ -54,9 +54,29 @@
 
 ## Approach
 
+> We will be proposing an ecosystem approach with big data analytics. We will create a conceptual framework. That conceptual framework will be translated into a taxonomy that allows us to organize logically the analysis. Algorithms will be generated based on the conceptual framework and taxonomy. The analytical approach is designed to be iterative and continue to be refined as we learn more and evaluate performance.
+
 ### Conceptual Framework
 
-> This section describes the operating lense for this project, including the assumptions being made and theory behind our methodology.
+> The challenge of improving UK exports is extremely well-suited to big data analytics. It is the type of of problem that defies a single solution and is characterized by a myriad of dynamically interconnected variables. It occurs in complex systems, where causal relationships are not always direct, and where the circumstances vary from location to location. While such problems may defy linear approaches, outcomes can be predicted. We predict outcomes through an “ecosystem” approach – a holistic approach that parameterizes the ecosystem and allows for predictive modeling.
+
+* With Brexit on the doorstep, it appears that a decline in net trade is imminent. Offsetting that decline by developing strategies to increase exports from SMEs is a major focus of the UK and in particular its Department for International Trade. However, current strategies are insufficient to address the problem.
+
+* Current strategies to identify target markets for UK products abroad have focused on ad hoc surveys, reports, and data collection by trade agents from the Department for International Trade.
+
+* These techniques are not only expensive but insufficient as they do not leverage a holistic approach that seeks to address the problem using an ecosystem model.
+
+* "Every market and enterprise has a complex mosaic of characteristics derived from the demographics, environmental resources, geographical location, economic activity, socio-cultural landscape, etc. that define a unique environment.  These characteristics are reflected in census data, transactions, survey data, remote imagery, and many other datasets.  While these datasets may be of varying quality and completeness, each has the potential of carrying information that reflects potential for a given product in a given market, either by itself, or more commonly through combination with other datasets." [Novametrics, 1](#novametrics-trafficking)
+
+* "New methodologies in big data analytics hold promise for exploiting these existing diverse data sets. In many areas, we are no longer data limited.  We can go beyond the resolution of traditional data analysis, identifying diagnostic “signals” in what was previously considered “noise,” to improve estimates of prevalence, identify underlying causal relationships, and optimize return on investment (ROI)" [Novametrics, 2](#novametrics-trafficking)
+
+* There are *five V's* of big data: volume, velocity, variety, variability, and value [(Jain)](#jain-data).
+
+* Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators.
+
+  * *Strong signals*, by contrast, arise from a single source.
+
+* The result of our weak signal analysis will be a suite of indicators, no one of which is predictive of our desired output, but in combination provide valuable insight.
 
 * Our approach to identifying markets for UK products focuses on quantitative rigour and weak signal analysis to create ecosystem level insights.
 
@@ -66,11 +86,7 @@
 
 * Much like in *ensemble learning* where a set of *weak learners* are used in conjunction to produce a strong model, we believe that by integrating weak signals from a variety of data sources, we can eliminate noise to capture subtle but powerful indicators. These indicators would otherwise be overlooked by methodologies not focused on the complex interplay that creates the salient characteristics of ecosystems.
 
-* "Every community and enterprise has a complex mosaic of characteristics derived from the demographics, environmental resources, geographical location, economic activity, socio-cultural landscape, etc. that define a unique environment.  These characteristics are reflected in census data, transactions, survey data, remote imagery, and many other datasets.  While these datasets may be of varying quality and completeness, each has the potential of carrying information that reflects the crime, either by itself, or more commonly through combination with other datasets." [Novametrics, 1](#novametrics-trafficking)
-
 * In order to effectively carry out this methodology, we must recognize that we are no longer data limited, but analysis limited. However since the methodology is quantitative, we can design systems to carry it out on our behalf.
-
-* "In many areas, we are no longer data limited.  We can go beyond the resolution of traditional data analysis, identifying diagnostic “signals” in what was previously considered “noise,” to improve estimates of prevalence, identify underlying causal relationships, and optimize return on investment (ROI)" [Novametrics, 2](#novametrics-trafficking)
 
 * The system we design will have three key features.
 
@@ -81,16 +97,6 @@
 * Using a variety of data sources, weak signal analysis, and an automated system, we hope to be able to create heat maps identifying potential markets for UK products.
 
   * The raw output of our methodology will be a probabilistic value best represented as a confidence interval
-
-### Weak Signal Analysis
-
-> There are *five V's* of big data: volume, velocity, variety, variability, and value [(Jain)](#jain-data). Weak signals are a phenomenon of ecosystems with many interacting parts. Observing these ecosystems and performing weak signal analysis requires ingesting diverse streams of data and then systematically looking at how these data streams interact with one another to produce strong predictive indicators. *Strong signals*, by contrast, arise from a single source. The result of our weak signal analysis will be a suite of indicators, no one of which is predictive of our desired output, but in combination provide valuable insight.
-
-* [How to Make Sense of Weak Signals](http://sloanreview.mit.edu/article/how-to-make-sense-of-weak-signals/)
-
-* [The strategic strength of weak signal analysis](http://www.sciencedirect.com/science/article/pii/S0016328711002564)
-
-* [The strongness of weak signals: self-reference and paradox in anticipatory systems](https://link.springer.com/article/10.1007/s40309-016-0085-1)
 
 ### Analytical Approach
 
@@ -106,7 +112,17 @@
 
 ![Saturn Data Stacking](./assets/saturn-images.png)
 
-#### Correlation Analysis
+### Taxonomy
+
+> This section lays out the components of our methodology in a schematic form. These components can be evaluated quantitatively and assigned a value. The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression for market opportunity.
+
+![Schematic Taxonomy](./assets/schematic-taxonomy.svg)
+
+* Factors are multiplicative, as a reduction of any factor to zero (e.g. removing it entirely) reduces the potential value of the target market to zero.
+
+* Each of the factors contain multiple terms. These terms are additive.
+
+### Correlation Analysis
 
 > In our holistic ecosystem-approach, correlations can indicate predictive relationships. The analysis remains agnostic about the form of the relationship and does not assume correlation implies causation (*“cum hoc ergo propter hoc”*) [(Novametrics, 7)](#novametrics-trafficking).
 
@@ -126,7 +142,7 @@
 
 * We assume wicked problems are produced by coupled systems.
 
-#### Factor Analysis
+### Factor Analysis
 
 > Factor Analysis is used to identify the main factors that contribute to the variability of the data. Weightings for each of the factors are quantitatively determined through regression analysis. Composite measures are developed using indicators identified through the factor analysis with weightings derived from the regression analysis [(Novametrics, 7)](#novametrics-trafficking).
 
@@ -151,16 +167,6 @@
 * Indicators are extracted from the factors by determining which of the indicators are responsible for the factors selected.
 
 * Weightings for the indicators can be determined through regression. The p-value can be used to determine a weight that represents each indicator's correlation with the outcome.
-
-### Taxonomy
-
-> This section lays out the components of our methodology in a schematic form. These components can be evaluated quantitatively and assigned a value. The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression for market opportunity.
-
-![Schematic Taxonomy](./assets/schematic-taxonomy.svg)
-
-* Factors are multiplicative, as a reduction of any factor to zero (e.g. removing it entirely) reduces the potential value of the target market to zero.
-
-* Each of the factors contain multiple terms. These terms are additive.
 
 ### Algorithm
 
