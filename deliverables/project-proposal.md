@@ -204,7 +204,11 @@
 
     1. Large enterprises are already exporting in large quantities.
 
-    <!-- Add citation or numbers from World First thinking global report -->
+![Export Value and Number of Enterprises by Size](./assets/export-value-and-number-of-enterprises.svg)
+
+![Percent of Export Value by Enterprise Size](./assets/percent-of-export-value.svg)
+
+* These charts were produced using data from UK's HM Revenue & Customs statistics report [UK trade in goods by business characteristics 2016](https://www.gov.uk/government/statistics/uk-trade-in-goods-by-business-characteristics-2016)
 
 * In order to qualify for selection, these products/services must already be successfully exported to the US.
 
@@ -233,6 +237,13 @@
   * Potential benefits include exposure in under penetrated markets and the ability to for potential consumers to test products
 
 * Products/services were primarily identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
+
+* The products selected come from a variety of sectors. The following chart shows relative value of exports by section according the Standard International Trade Classification (SITC).
+
+![Percent of Export Value by Section](./assets/exports-by-section.svg)
+
+* This chart was produced using data from UK's HM Revenue & Customs statistics report [UK regional trade statistics: first quarter 2017](https://www.gov.uk/government/statistics/uk-regional-trade-statistics-first-quarter-2017)
+
 
 * The following list is ordered in terms likely hood to be included in our final analysis
 
@@ -354,7 +365,7 @@
 
 ---
 
-###### [Amplify](https://www.lseg.com/resources/1000-companies-inspire-britain/amplify)
+#### [Amplify](https://www.lseg.com/resources/1000-companies-inspire-britain/amplify)
 
 > [Amplify](http://www.weareamplify.com/) are focused on bespoke marketing campaigns that put emotional experiences at center by engaging with culture that people identify with.
 
