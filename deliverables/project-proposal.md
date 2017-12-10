@@ -58,13 +58,13 @@
 
 ### Conceptual Framework
 
-> The challenge of improving UK exports is extremely well-suited to big data analytics. It is the type of of problem that defies a single solution and is characterized by a myriad of dynamically interconnected variables. It occurs in complex systems, where causal relationships are not always direct, and where the circumstances vary from location to location. While such problems may defy linear approaches, outcomes can be predicted. We predict outcomes through an “ecosystem” approach – a holistic approach that parameterizes the ecosystem and allows for predictive modeling.
+> The challenge of improving UK exports is extremely well-suited to big data analytics. It is the type of of problem that defies a single solution and is characterized by a myriad of dynamically interconnected variables. It occurs in complex systems, where causal relationships are not always direct, and where the circumstances vary from location to location. While such problems may defy linear approaches, outcomes can be predicted. We predict outcomes through an "ecosystem" approach – a holistic approach that parameterizes the ecosystem and allows for predictive modeling.
 
 * With Brexit on the doorstep, it appears that a decline in net trade is imminent. Offsetting that decline by developing strategies to increase exports from SMEs is a major focus of the UK and in particular its Department for International Trade. However, current strategies are insufficient to address the problem.
 
 * Current strategies to identify target markets for UK products abroad have focused on ad hoc surveys, reports, and data collection by trade agents from the Department for International Trade.
 
-* These techniques are not only expensive but insufficient as they do not leverage a holistic approach that seeks to address the problem using an ecosystem model.
+* These techniques are not only expensive, but insufficient. They do not leverage a holistic approach that seeks to address the problem using an ecosystem model.
 
 * "Every market and enterprise has a complex mosaic of characteristics derived from the demographics, environmental resources, geographical location, economic activity, socio-cultural landscape, etc. that define a unique environment.  These characteristics are reflected in census data, transactions, survey data, remote imagery, and many other datasets.  While these datasets may be of varying quality and completeness, each has the potential of carrying information that reflects potential for a given product in a given market, either by itself, or more commonly through combination with other datasets." [Novametrics, 1](#novametrics-trafficking)
 
@@ -100,7 +100,7 @@
 
 ### Analytical Approach
 
-> The application of weak signal analysis to big data is used identify characteristics predictive of outcomes, and to reveal underlying causal relationships. The weak signal approach to big data finds inter-relationships among multiple variables. With many variables and many distinct markets, there may be multiple independent linkages. Multiple independent linkages indicate the potential value of a market has multiple causes; and the causes have different relative priority in different locations. Previously hypothesized relationships may be confirmed, but unexpected relationships are more common. It is the unexpected relationships that lead to a more sophisticated understanding, and in turn, offer opportunities for more nuanced and effective interventions. [Novametrics, 6](#novametrics-trafficking)
+> The application of weak signal analysis to big data is used identify characteristics predictive of outcomes, and to reveal underlying causal relationships. The weak signal approach to big data finds inter-relationships among multiple variables. With many variables and many distinct markets, there may be multiple independent linkages. Multiple independent linkages indicate the potential value of a market has multiple causes; and the causes have different relative priority in different locations. Previously hypothesized relationships may be confirmed, but unexpected relationships are more common. It is the unexpected relationships that lead to a more sophisticated understanding, and in turn, offer opportunities for more effective market identification. [Novametrics, 6](#novametrics-trafficking)
 
 * Identifying target markets can be classified as a wicked problem - the type of problem that defies a single solution and is characterized by a myriad of dynamically interconnected variables [(Novametrics, 2)](#novametrics-trafficking)
 
@@ -112,6 +112,12 @@
 
 ![Saturn Data Stacking](./assets/saturn-images.png)
 
+* This capability will allow evaluations in either direction. It can be used to match optimal markets to specific UK goods or services; or it can be used to identify optimal UK goods or services for specific markets.
+
+* For the purposes of this thesis, however, we illustrate the ability to identify prime markets in the US for UK exports.
+
+  * This narrows the focus of the algorithm by eliminating the need to focus on the supply potential.
+
 ### Taxonomy
 
 > This section lays out the components of our methodology in a schematic form. These components can be evaluated quantitatively and assigned a value. The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression for market opportunity.
@@ -122,6 +128,10 @@
 
 * Each of the factors contain multiple terms. These terms are additive.
 
+### Algorithm
+
+> The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression. This section describes that mathematical expression.
+
 ### Correlation Analysis
 
 > In our holistic ecosystem-approach, correlations can indicate predictive relationships. The analysis remains agnostic about the form of the relationship and does not assume correlation implies causation (*“cum hoc ergo propter hoc”*) [(Novametrics, 7)](#novametrics-trafficking).
@@ -130,7 +140,7 @@
 
   1. The correlation is the result of random coincidence and does not reveal any causal relationships between `A` and `B`.
 
-  1. A is “causing” `B`, with the independent variable `A` causing the change in the dependent variable `B`.
+  1. `A` is “causing” `B`, with the independent variable `A` causing the change in the dependent variable `B`.
 
   1. `B` is “causing” `A`, with the independent variable `B` causing the change in the dependent variable `A`.
 
@@ -168,19 +178,13 @@
 
 * Weightings for the indicators can be determined through regression. The p-value can be used to determine a weight that represents each indicator's correlation with the outcome.
 
-### Algorithm
-
-> This section describes the algorithm behind the methodology in mathematical form.
-
-<!-- TODO: add SOM / MdPM here as providing ability to assess value of output visually -->
-
 ## Plan
 
 ### Product/Service Selection
 
 > In order to test our methodology, we have selected five UK products/services.
 
-* According to the [European Union (EU)](http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition_en), whom the UK are still a part of as of this writing, an SME is defined as follows:
+* According to the [European Commission on Internal Market, Industry, Entrepreneurship, and SMEs](http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition_en), an SME is defined as follows:
 
   1. The staff head count must be below the given number.
 
@@ -192,7 +196,7 @@
 | **Small**        | < 50            | < 10 m euros | < 10 m euros  |
 | **Micro**        | < 10            | < 2 m euros  | < 2 m euros   |
 
-* According to the UK's HM Revenue and Customs an SME is any company that meets the following criteria:
+* According to the UK's HM Revenue and Customs guidance on [Research and Development (R&D) tax relief for SMEs](https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises), an SME is any company that meets the following criteria:
 
   1. Less then 500 staff
 
@@ -200,13 +204,13 @@
 
   * These SMEs can get Corporation Tax relief for expenditure on research and development
 
-* As you can see there are multiple definitions of SMEs. For the purposes of this study we are going to be focusing on medium sized enterprises.
+* As you can see there are multiple definitions of SMEs. For the purposes of this thesis we are going to be focusing on medium sized enterprises.
 
-  * We will define a medium sized enterprise as one with greater than 50 employees, and a balance sheet of 10-86 million euros or turnover of 10-100 million euros.
+  * We will define a medium sized enterprise as one 50-500 employees, and a balance sheet of 10-86 million euros or turnover of 10-100 million euros.
 
-  * We are going to focus on medium sized enterprises for two reasons.
+  * We are going to focus on medium sized enterprises for two reasons:
 
-    1. Small enterprise exports are too small.
+    1. The potential value of small enterprise exports are too small.
 
     1. Large enterprises are already exporting in large quantities.
 
@@ -250,8 +254,7 @@
 
 * This chart was produced using data from UK's HM Revenue & Customs statistics report [UK regional trade statistics: first quarter 2017](https://www.gov.uk/government/statistics/uk-regional-trade-statistics-first-quarter-2017)
 
-
-* The following list is ordered in terms likely hood to be included in our final analysis
+* The following list is ordered in terms likely hood to be included in our final analysis.
 
 ---
 
