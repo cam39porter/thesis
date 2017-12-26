@@ -122,15 +122,67 @@
 
 > This section lays out the components of our methodology in a schematic form. These components can be evaluated quantitatively and assigned a value. The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression for market opportunity.
 
+* The taxonomy provides a framework for understanding the factors that create a market system, which can be used to identify target markets for UK products.
+
 ![Schematic Taxonomy](./assets/schematic-taxonomy.svg)
 
-* Factors are multiplicative, as a reduction of any factor to zero (e.g. removing it entirely) reduces the potential value of the target market to zero.
+* For the purposes of this study, a market system can be described with three factors.
 
-* Each of the factors contain multiple terms. These terms are additive.
+  * *Demand potential* encapsulates the market's consumers willingness and capability of purchasing the given product or service.
+
+  * *Market contestability* encapsulates the market's fiscal, legal, and regulatory characteristics that either advantage or disadvantage the given product or service in the given market.
+
+  * *Supply potential* describes the market's suppliers willingness and capability of selling the given the product or service to consumers.
+
+* The positive intersection of these three factors can be assumed to represent a market opportunity for a UK product or service.
 
 ### Algorithm
 
 > The schematic taxonomy can be translated into an algorithm and represented with a mathematical expression. This section describes that mathematical expression.
+
+* Let $\alpha$ be a given product or service.
+
+* Let $O_{\alpha}$ be the market opportunity for a given product or service $\alpha$.
+
+* Let $D_{\alpha}$ be the demand potential for a given product or service $\alpha$.
+
+* Let $S_{\alpha}$ be the supply potential for a given product or service $\alpha$.
+
+* Let $M_{\alpha}$ be the market contestability for a given product or service $\alpha$.
+
+* Factors are multiplicative, as a reduction of any factor to zero (e.g. removing it entirely) reduces the potential value of the target market to zero.
+
+$$O_{\alpha} = D_{\alpha} * M_{\alpha} * S_{\alpha}$$ (1)
+
+* Each of the factors contain multiple terms. These terms are additive.
+
+* Let $t$ be a certain time period.
+
+$$D_{\alpha}(t) = f_{D}(\text{volume} + \text{volume} + ...)$$ (2)
+
+$$M_{\alpha}(t) = f_{M}(\text{tariffs} + \text{taxes} + ...)$$ (3)
+
+$$S_{\alpha}(t) = f_{S}(\text{bias} + \text{distribution} + ...)$$ (4)
+
+* We can now define market opportunity as the following:
+
+$$O_{\alpha} = \int w(\tau_2 - \tau) \sum_{\alpha} D_{\alpha}(t) * M_{\alpha}(t) * S_{\alpha}(t) \text{ dt}$$ (5)
+
+### Simplification
+
+> Our [product selection methodology](#product-selection) allows us to simplify our algorithm. Since the methodology focuses on enterprises already exporting to US markets, we can focus on optimizing for demand potential.
+
+* The selection methodology allows us to assume that the market structure factor is a positive value because the product has met the financial, legal, and regulatory burdens to enter the US markets already.
+
+* The selections methodology allows us to assume the supply potential factor is a positive because the product is already being supplied to US markets.
+
+* This means that we can simplify our algorithm to the following, where $\gamma$ is a positive constant representing market structure and supply potential:
+
+$$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
+
+* We will use our analysis to develop a methodology for identifying markets that optimize for the terms constituting demand potential (volume, value, ...).
+
+* This simplification will allow us to tell UK enterprises which markets to target and why.
 
 ### Correlation Analysis
 
@@ -180,7 +232,7 @@
 
 ## Plan
 
-### Product/Service Selection
+### Product Selection
 
 > In order to test our methodology, we have selected five UK products/services.
 
