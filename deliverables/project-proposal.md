@@ -703,6 +703,10 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
   * Answering this question will likely require a more qualitative analysis. Factors such as ease of integrating new data sources and ease of producing new indicators should be considered.
 
+## Future Work
+
+* How do you identify under-served or target markets for a product categories instead of individual products?
+
 ## Bibliography
 
 * <a id='sampson-brexit' href='https://www.aeaweb.org/articles?id=10.1257/jep.31.4.163'>Sampson, Thomas. 2017. "Brexit: The Economics of International Disintegration". Journal of Economic Perspectives, 31(4): 163-84.</a>
