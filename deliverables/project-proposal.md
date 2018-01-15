@@ -52,6 +52,216 @@
 
 * "SMEs in the IT and Communications sectors are much more likely to have plans to export (23% had such plans). Similarly, across the Professional and Scientific Service industries, 11% of SMEs said that they have such plans. This still leaves a considerable number of businesses across the UK with no intention to export" [(WorldFirst, 19)](#worldfirst-brexit).
 
+## Product Selection
+
+> We used various criteria to select products to perform and test our systematic analysis on. This section outlines those criteria and provides a list of potential products.
+
+* According to the [European Commission on Internal Market, Industry, Entrepreneurship, and SMEs](http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition_en), an SME is defined as follows:
+
+  1. The staff head count must be below the given number.
+
+  1. Either the turnover or the balance sheet must be below the given number.
+
+| Company Category | Staff Headcount | Turnover     | Balance Sheet |
+| :--------------- | :-------------: | :----------: | :-----------: |
+| **Medium**       | < 250           | < 50 m euros | < 43 m euros  |
+| **Small**        | < 50            | < 10 m euros | < 10 m euros  |
+| **Micro**        | < 10            | < 2 m euros  | < 2 m euros   |
+
+* According to the UK's HM Revenue and Customs guidance on [Research and Development (R&D) tax relief for SMEs](https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises), an SME is any company that meets the following criteria:
+
+  1. Less then 500 staff
+
+  1. Turnover of less than 100 million euros or a balance sheet under 86 million euros.
+
+  * These SMEs can get Corporation Tax relief for expenditure on research and development
+
+* As you can see there are multiple definitions of SMEs. For the purposes of this thesis we are going to be focusing on medium sized enterprises.
+
+  * We will define a medium sized enterprise as one 50-500 employees, and a balance sheet of 10-86 million euros or turnover of 10-100 million euros.
+
+  * We are going to focus on medium sized enterprises for two reasons:
+
+    1. The potential value of small enterprise exports are too small.
+
+    1. Large enterprises are already exporting in large quantities.
+
+![Export Value and Number of Enterprises by Size](./assets/export-value-and-number-of-enterprises.svg)
+
+![Percent of Export Value by Enterprise Size](./assets/percent-of-export-value.svg)
+
+* These charts were produced using data from UK's HM Revenue & Customs statistics report [UK trade in goods by business characteristics 2016](https://www.gov.uk/government/statistics/uk-trade-in-goods-by-business-characteristics-2016)
+
+* In order to qualify for selection, these products/services must already be successfully exported to the US.
+
+  * This may seem counterintuitive, but the purpose is to hone the focus of this project.
+
+  * The goal of the project is to identify prime markets for UK products/services.
+
+  * By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success.
+
+    * These factors include quotas, tariffs, and regulatory compliance.
+
+* We would also like to note our reasoning for selecting not only products, but services as well.
+
+  * The purpose of the project is to boost UK's net trade.
+
+  * This can be done by decreasing imports or increasing exports.
+
+  * Since products are often made from imported components, the value in terms of net trade from exporting them is partially offset by the import cost of the components.
+
+  * However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
+
+  <!-- Delete this section if only products are selected -->
+
+* For products already exported to the US via e-commerce, it is important that the benefits of a brick and mortar presence are clearly articulated.
+
+  * Potential benefits include exposure in under penetrated markets and the ability to for potential consumers to test products
+
+* Products/services were primarily identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
+
+* The products selected come from a variety of sectors. The following chart shows relative value of exports by section according the Standard International Trade Classification (SITC).
+
+![Percent of Export Value by Section](./assets/exports-by-section.svg)
+
+* This chart was produced using data from UK's HM Revenue & Customs statistics report [UK regional trade statistics: first quarter 2017](https://www.gov.uk/government/statistics/uk-regional-trade-statistics-first-quarter-2017)
+
+* The following list is ordered in terms likely hood to be included in our final analysis.
+
+---
+
+### [Brew Dog](https://www.lseg.com/resources/1000-companies-inspire-britain/brewdog)
+
+> [Brew Dog](https://www.brewdog.com/) is a craft brewery that sells its beer in its own bars and bottle shops. In 2010 they started "Equity for Punks" and have raised £20 million in crowd funding. In the summer of 2016 they opened a brewery in Columbus, Ohio to bring the beer to people across the US.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* [Crunchbase](https://www.crunchbase.com/organization/brewdog)
+
+* According to [Craft](https://craft.co/brewdog), Brompton has 395 employees and 24.3 million pounds in current assets as of 2016
+
+---
+
+### Brompton
+
+> [Brompton](https://www.brompton.com/) is a bike company from London that has been manufacturing their signature foldable bike by hand since 1975. They have also recently produced an electric version of their popular bike.
+
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+* [Crunchbase](https://www.crunchbase.com/organization/brompton-bicycle)
+
+* According to [Craft](https://craft.co/brompton-bicycle), Brompton has 130 employees and 12.1 million pounds in current assets as of 2016
+
+---
+
+### Rapha
+
+> [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
+
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+* 251 to 1000 employees according to [Crunchbase](https://www.crunchbase.com/organization/rapha)
+
+* According to [Craft](https://craft.co/rapha), Rapha has 361 employees and 30 million pounds in current assets
+
+---
+
+### [Chapel Down](https://www.lseg.com/resources/1000-companies-inspire-britain/chapel-down)
+
+> [Chapel Down](https://www.chapeldown.com/) raised crowd funding expectation when it raised £3.95m in ten days. They offer a world-class range of sparkling and still wines, alongside an award-winning range of Curious beers and ciders.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* As of fiscal year 2016, Chapel down had 8.5 million pounds in total assets according to [Craft](https://craft.co/chapel-down-group)
+
+---
+
+### [Belvoir Fruit Farms](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/belvoir-fruit-farms)
+
+> [Belvoir](https://www.belvoirfruitfarms.co.uk/about-us/) make a range of premium soft drinks that are handmade and bottled on the farm using as many UK ingredients as possible. Exports around the world currently account for around 16% of their sales.
+
+* According to [Craft](https://craft.co/rapha), Belvoir Fruit Farms has 50 employees
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+---
+
+### [Monica Vinader](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/monica-vinader)
+
+> [Monica Vinader](https://www.monicavinader.com/us/stockists/uk) is a UK based jewelry brand known for the their high quality at a reasonable price point. THey are looking to expand globally into brick and mortar stores beyond their e-commerce presence. This includes opening a flagship store in New York.
+
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+* 51 to 100 employees according to [Crunchbase](https://www.crunchbase.com/organization/monica-vinader)
+
+---
+
+### [Pipers Crisp](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/pipers-crisps)
+
+> [Pipers Crisp](http://www.piperscrisps.com/) was started in 2004 and now sells their locally sourced potatoes in 30 countries world wide. They invest heavily in new equipment and attempt to match new chip flavors to emerging trends in consumption.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+---
+
+### [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree)
+
+> [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree) has become the world's leading supplier of premium natural mixers for alcoholic drinks by retail sale value. Today they sell to hotels, bars, restaurants, and cafes in 65 countries. The seek to capture the trend towards "premiumisation". Two thirds of their sales in 2015 came from abroad, with much of that being in the US.
+
+* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
+
+* 11 to 50 employees according to [Crunchbase](Fever Tree)
+
+---
+
+### [Golden Bear](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/golden-bear)
+
+> [Golden Bear](www.goldenbeartoys.com) produces high quality plush and plastic toys for children. They recently obtained the worldwide rights for a new property that will allow for further export expansion.
+
+* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
+
+---
+
+### [Gtech](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering/gtech)
+
+> [Gtech](https://www.gtech.co.uk/) designs and sells cordless appliances including electric bikes. They have 22 million units in 19 different countries since they were founded in 2001.
+
+* [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
+
+---
+
+### Creature London
+
+> [Creature London](https://www.creaturelondon.com/content/about) is a British add agency whose tag line is "breaking the rules, in the right way, for the right reasons". Although they do not have any clients currently in US. This could be an interesting service to explore.
+
+* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+
+---
+
+### the7stars
+
+> [the7stars](http://www.the7stars.co.uk/) is the largest independent media planning and buying agency in the UK. It also already has US clients like the PGA tour and TLC.
+
+* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+
+---
+
+### [Amplify](https://www.lseg.com/resources/1000-companies-inspire-britain/amplify)
+
+> [Amplify](http://www.weareamplify.com/) are focused on bespoke marketing campaigns that put emotional experiences at center by engaging with culture that people identify with.
+
+* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
+
+---
+
+### [Kromek Group](https://www.kromek.com/)
+
+> [Kromek Group] builds medical imaging, security screening, and nuclear detection devices. They have a built a mobile commercial radiation detection device and have been awarded a sole supplier contract by DARPA (Defense Advanced Research Projects Agency).
+
+* [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
+
+---
+
 ## Approach
 
 > We will be proposing an ecosystem approach with big data analytics. We will create a conceptual framework. That conceptual framework will be translated into a taxonomy that allows us to organize logically the analysis. Algorithms will be generated based on the conceptual framework and taxonomy. The analytical approach is designed to be iterative and continue to be refined as we learn more and evaluate performance.
@@ -172,7 +382,9 @@ $$O_{\alpha} = \int w(\tau_2 - \tau) \sum_{\alpha} D_{\alpha}(t) * M_{\alpha}(t)
 
 > Our [product selection methodology](#product-selection) allows us to simplify our algorithm. Since the methodology focuses on enterprises already exporting to US markets, we can focus on optimizing for demand potential.
 
-* The selection methodology allows us to assume that the market structure factor is a positive value because the product has met the financial, legal, and regulatory burdens to enter the US markets already.
+* For the purpose of this analysis, we have selected products that have already penetrated US market and made clear their interest in exporting per the selection methodology described previously.
+
+* The selection methodology allows us to assume that the market contestability factor is a positive value because the product has met the financial, legal, and regulatory burdens to enter the US markets already.
 
 * The selections methodology allows us to assume the supply potential factor is a positive because the product is already being supplied to US markets.
 
@@ -182,7 +394,9 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * We will use our analysis to develop a methodology for identifying markets that optimize for the terms constituting demand potential (volume, value, ...).
 
-* This simplification will allow us to tell UK enterprises which markets to target and why.
+* This simplification will allow us to tell UK enterprises which markets to target.
+
+* We will identify optimal markets for UK products based on the demand characteristics of the markets.
 
 ### Correlation Analysis
 
@@ -230,219 +444,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * Weightings for the indicators can be determined through regression. The p-value can be used to determine a weight that represents each indicator's correlation with the outcome.
 
-## Plan
-
-### Product Selection
-
-> In order to test our methodology, we have selected five UK products/services.
-
-* According to the [European Commission on Internal Market, Industry, Entrepreneurship, and SMEs](http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition_en), an SME is defined as follows:
-
-  1. The staff head count must be below the given number.
-
-  1. Either the turnover or the balance sheet must be below the given number.
-
-| Company Category | Staff Headcount | Turnover     | Balance Sheet |
-| :--------------- | :-------------: | :----------: | :-----------: |
-| **Medium**       | < 250           | < 50 m euros | < 43 m euros  |
-| **Small**        | < 50            | < 10 m euros | < 10 m euros  |
-| **Micro**        | < 10            | < 2 m euros  | < 2 m euros   |
-
-* According to the UK's HM Revenue and Customs guidance on [Research and Development (R&D) tax relief for SMEs](https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises), an SME is any company that meets the following criteria:
-
-  1. Less then 500 staff
-
-  1. Turnover of less than 100 million euros or a balance sheet under 86 million euros.
-
-  * These SMEs can get Corporation Tax relief for expenditure on research and development
-
-* As you can see there are multiple definitions of SMEs. For the purposes of this thesis we are going to be focusing on medium sized enterprises.
-
-  * We will define a medium sized enterprise as one 50-500 employees, and a balance sheet of 10-86 million euros or turnover of 10-100 million euros.
-
-  * We are going to focus on medium sized enterprises for two reasons:
-
-    1. The potential value of small enterprise exports are too small.
-
-    1. Large enterprises are already exporting in large quantities.
-
-![Export Value and Number of Enterprises by Size](./assets/export-value-and-number-of-enterprises.svg)
-
-![Percent of Export Value by Enterprise Size](./assets/percent-of-export-value.svg)
-
-* These charts were produced using data from UK's HM Revenue & Customs statistics report [UK trade in goods by business characteristics 2016](https://www.gov.uk/government/statistics/uk-trade-in-goods-by-business-characteristics-2016)
-
-* In order to qualify for selection, these products/services must already be successfully exported to the US.
-
-  * This may seem counterintuitive, but the purpose is to hone the focus of this project.
-
-  * The goal of the project is to identify prime markets for UK products/services.
-
-  * By restricting our selection to those already being exported to the US, we are mitigating the importance of other influential economic and political factors on export success.
-
-    * These factors include quotas, tariffs, and regulatory compliance.
-
-* We would also like to note our reasoning for selecting not only products, but services as well.
-
-  * The purpose of the project is to boost UK's net trade.
-
-  * This can be done by decreasing imports or increasing exports.
-
-  * Since products are often made from imported components, the value in terms of net trade from exporting them is partially offset by the import cost of the components.
-
-  * However, since services have no imported components, exporting them has a *purely* positive effect on net trade.
-
-  <!-- Delete this section if only products are selected -->
-
-* For products already exported to the US via e-commerce, it is important that the benefits of a brick and mortar presence are clearly articulated.
-
-  * Potential benefits include exposure in under penetrated markets and the ability to for potential consumers to test products
-
-* Products/services were primarily identified using the *London Stock Exchange's* ["2017 Report - 1000 Companies UK"](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk).
-
-* The products selected come from a variety of sectors. The following chart shows relative value of exports by section according the Standard International Trade Classification (SITC).
-
-![Percent of Export Value by Section](./assets/exports-by-section.svg)
-
-* This chart was produced using data from UK's HM Revenue & Customs statistics report [UK regional trade statistics: first quarter 2017](https://www.gov.uk/government/statistics/uk-regional-trade-statistics-first-quarter-2017)
-
-* The following list is ordered in terms likely hood to be included in our final analysis.
-
----
-
-#### [Brew Dog](https://www.lseg.com/resources/1000-companies-inspire-britain/brewdog)
-
-> [Brew Dog](https://www.brewdog.com/) is a craft brewery that sells its beer in its own bars and bottle shops. In 2010 they started "Equity for Punks" and have raised £20 million in crowd funding. In the summer of 2016 they opened a brewery in Columbus, Ohio to bring the beer to people across the US.
-
-* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
-
-* [Crunchbase](https://www.crunchbase.com/organization/brewdog)
-
-* According to [Craft](https://craft.co/brewdog), Brompton has 395 employees and 24.3 million pounds in current assets as of 2016
-
----
-
-#### Brompton
-
-> [Brompton](https://www.brompton.com/) is a bike company from London that has been manufacturing their signature foldable bike by hand since 1975. They have also recently produced an electric version of their popular bike.
-
-* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
-
-* [Crunchbase](https://www.crunchbase.com/organization/brompton-bicycle)
-
-* According to [Craft](https://craft.co/brompton-bicycle), Brompton has 130 employees and 12.1 million pounds in current assets as of 2016
-
----
-
-#### Rapha
-
-> [Rapha](http://www.rapha.cc/us/en_US/) is a British cycling gear company focused on high end, high performance products.
-
-* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
-
-* 251 to 1000 employees according to [Crunchbase](https://www.crunchbase.com/organization/rapha)
-
-* According to [Craft](https://craft.co/rapha), Rapha has 361 employees and 30 million pounds in current assets
-
----
-
-#### [Chapel Down](https://www.lseg.com/resources/1000-companies-inspire-britain/chapel-down)
-
-> [Chapel Down](https://www.chapeldown.com/) raised crowd funding expectation when it raised £3.95m in ten days. They offer a world-class range of sparkling and still wines, alongside an award-winning range of Curious beers and ciders.
-
-* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
-
-* As of fiscal year 2016, Chapel down had 8.5 million pounds in total assets according to [Craft](https://craft.co/chapel-down-group)
-
----
-
-#### [Belvoir Fruit Farms](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/belvoir-fruit-farms)
-
-> [Belvoir](https://www.belvoirfruitfarms.co.uk/about-us/) make a range of premium soft drinks that are handmade and bottled on the farm using as many UK ingredients as possible. Exports around the world currently account for around 16% of their sales.
-
-* According to [Craft](https://craft.co/rapha), Belvoir Fruit Farms has 50 employees
-
-* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
-
----
-
-#### [Monica Vinader](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/monica-vinader)
-
-> [Monica Vinader](https://www.monicavinader.com/us/stockists/uk) is a UK based jewelry brand known for the their high quality at a reasonable price point. THey are looking to expand globally into brick and mortar stores beyond their e-commerce presence. This includes opening a flagship store in New York.
-
-* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
-
-* 51 to 100 employees according to [Crunchbase](https://www.crunchbase.com/organization/monica-vinader)
-
----
-
-#### [Pipers Crisp](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/pipers-crisps)
-
-> [Pipers Crisp](http://www.piperscrisps.com/) was started in 2004 and now sells their locally sourced potatoes in 30 countries world wide. They invest heavily in new equipment and attempt to match new chip flavors to emerging trends in consumption.
-
-* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
-
----
-
-#### [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree)
-
-> [Fever Tree](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink/fever-tree) has become the world's leading supplier of premium natural mixers for alcoholic drinks by retail sale value. Today they sell to hotels, bars, restaurants, and cafes in 65 countries. The seek to capture the trend towards "premiumisation". Two thirds of their sales in 2015 came from abroad, with much of that being in the US.
-
-* [Food and Drink](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/food-drink)
-
-* 11 to 50 employees according to [Crunchbase](Fever Tree)
-
----
-
-#### [Golden Bear](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/retail/golden-bear)
-
-> [Golden Bear](www.goldenbeartoys.com) produces high quality plush and plastic toys for children. They recently obtained the worldwide rights for a new property that will allow for further export expansion.
-
-* [Retail](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk)
-
----
-
-#### [Gtech](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering/gtech)
-
-> [Gtech](https://www.gtech.co.uk/) designs and sells cordless appliances including electric bikes. They have 22 million units in 19 different countries since they were founded in 2001.
-
-* [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
-
----
-
-#### Creature London
-
-> [Creature London](https://www.creaturelondon.com/content/about) is a British add agency whose tag line is "breaking the rules, in the right way, for the right reasons". Although they do not have any clients currently in US. This could be an interesting service to explore.
-
-* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
-
----
-
-#### the7stars
-
-> [the7stars](http://www.the7stars.co.uk/) is the largest independent media planning and buying agency in the UK. It also already has US clients like the PGA tour and TLC.
-
-* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
-
----
-
-#### [Amplify](https://www.lseg.com/resources/1000-companies-inspire-britain/amplify)
-
-> [Amplify](http://www.weareamplify.com/) are focused on bespoke marketing campaigns that put emotional experiences at center by engaging with culture that people identify with.
-
-* [Creative Industries](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/creative-industries)
-
----
-
-#### [Kromek Group](https://www.kromek.com/)
-
-> [Kromek Group] builds medical imaging, security screening, and nuclear detection devices. They have a built a mobile commercial radiation detection device and have been awarded a sole supplier contract by DARPA (Defense Advanced Research Projects Agency).
-
-* [Manufacturing and Engineering](https://www.lseg.com/resources/1000-companies-inspire/2017-report-1000-companies-uk/manufacturing-engineering)
-
----
-
-### Datasets
+## Datasets
 
 > We have already identified a number of potential data sources from a variety of providers including, Princeton, Kaggle, Amazon, Uber, and the US Government. Each of these datasets has a location attribute. What follows is a selection of them.
 
@@ -452,7 +454,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 <!-- TODO: define *Data types* -->
 
-#### Census
+### Census
 
 > Census data can provide demographic insights useful for geodemographic market segmentation.
 
@@ -472,7 +474,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [Homlessness in the United States](https://www.kaggle.com/adamschroeder/homelessness) provides data on the rates of homelessness in cities.
 
-#### Housing
+### Housing
 
 > The cost of living is an important characteristic of populations.
 
@@ -484,7 +486,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [US Gross Rent Statistics](https://www.kaggle.com/goldenoakresearch/acs-gross-rent-us-statistics) provides gross rent data across the US.
 
-#### Trade
+### Trade
 
 > US trade data can be useful in evaluating the effectiveness of our methodology.
 
@@ -492,7 +494,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [City Data](http://library.princeton.edu/resource/title/city-data) provides a city by city guide to product costs and business expenses.
 
-#### Retail
+### Retail
 
 > The retail stores already located in a given city can provide insights into the consumption preferences of the population.
 
@@ -504,7 +506,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [Restaurants on YellowPages.com](https://www.kaggle.com/PromptCloudHQ/restaurants-on-yellowpagescom) provides data on the type and quality of restaurants.
 
-#### Culture
+### Culture
 
 > We can attempt to quantify the culture of cities.
 
@@ -516,19 +518,19 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [KickStarter](https://www.kaggle.com/socathie/kickstarter-project-statistics) provides data on where people who seek funding on the platform come from.
 
-#### Energy
+### Energy
 
 > The type and amount of energy consumed can be used to characterize cities.
 
 * [United States Energy Census](https://www.kaggle.com/lislejoem/us_energy_census_gdp_10-14) provides data on the type and amount of energy for locations across the US.
 
-#### Infrastructure
+### Infrastructure
 
 > The quality of infrastructure can provide insight into the cities priorities.
 
 * [Hospital Ratings](https://www.kaggle.com/center-for-medicare-and-medicaid/hospital-ratings) provides data on the quality of health care.
 
-#### Transportation
+### Transportation
 
 > Where people go and how they get there are important characteristics that distinguish populations.
 
@@ -546,7 +548,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [Navigable Waterways](https://catalog.data.gov/dataset/navigable-waterway-nodes-national-national-geospatial-data-asset-ngda-waterway-nodes) provides data on the location of navigable waterways in the US.
 
-#### Jobs
+### Jobs
 
 > Where people work is an important demographic characteristic.
 
@@ -554,7 +556,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [US Jobs on Monster.com](https://www.kaggle.com/PromptCloudHQ/us-jobs-on-monstercom) provides job postings data.
 
-#### Political
+### Political
 
 > Data on politicians, in particular concerning the orientation and the special interest groups they support, can provide useful insights into the nature of their constituency.
 
@@ -562,7 +564,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * [CQ Political MoneyLine](http://library.princeton.edu/resource/5082) provides data on the flow of money through the US political system.
 
-### Indicators
+## Indicators
 
 > *Indicators* are arbitrary combinations of attributes from the physical datasets. Indicators are removed if they are judged to have inadequate coverage or are obviously redundant with other indicators that have greater distribution.
 
@@ -593,27 +595,58 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * The process of indicator creation will be transparent and reproducible.
 
-#### Standardization
+### Standardization
 
 > Because the analysis includes comparisons, we “standardize” the data.  For the purposes of our analysis, we refer to standardizing data as providing a common reference. Whenever we have a measure, we determine how that measure should be standardized so that it can be compared from one location to another.  The standardization process may include weightings [(Novametrics, 5)](#novametircs-trafficking).
 
-#### Vectorization
+### Vectorization
 
 > While the various indicator measures provide a “magnitude” they typically do not provide a “direction.”  We therefore provide a direction to the value based on the how the indicators will be compiled.  In most cases, this step requires adjusting as a reciprocal or an inverse. For instance, high crime rates are considered a negative feature, while high income levels are considered a positive feature.  We might therefore align the direction of the indicator measures by multiplying all values of one of the indicator measures by -1 [(Novametrics, 6)](#novametircs-trafficking).
 
-#### Normalization
+### Normalization
 
 > Because our goal is to perform statistical analysis that combines different types of data, we translate the units and scales of the indicators into a common form of measurement by normalizing. If the data present a normal or log-normal distribution, we normalize the data for each indicator using the deviations from the norm. If the data distribution does not follow a normal distribution or exhibits natural breaks, we use percentile ranking or assign values to each grouping [(Novametrics, 6)](#novametircs-trafficking).
 
 * If the data follows a normal distribution, we can normalize the data for each indicator using the deviations from the norm - also called the *Z score*.
 
-### System Architecture
+### Administrative Levels
+
+> The US and UK can be divided into administrative levels. We will use these administrative levels as the basis for our geospatial analysis.
+
+* We have decided to use *census tracts* in the US and *middle layer super output areas* in the UK as our base administrative level for geospatial analysis.
+
+#### US
+
+* Census tracts generally have a population size between 1,200 and 8,000 people, with an optimum size of 4,000 people. More information can be found [here](https://www.census.gov/geo/reference/gtc/gtc_ct.html)
+
+* In the US, an [urbanized area](https://www2.census.gov/geo/pdfs/reference/GARM/Ch2GARM.pdf) is a continuously built up area with a population of 50,000 or more
+
+
+#### UK
+
+* Description of output areas taken from the Office for National Statistics in the UK. It can found [here](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/2011censuspopulationandhouseholdestimatesforsmallareasinenglandandwales/2012-11-23)
+
+  * Output areas (OAs) are the lowest level of geography produced across all census topics. Population estimates at OA level are important to users as they give information on the stability of a population over time and provide insight into local patterns of change
+
+  * OAs contain approximately equal numbers of usual residents, and are intended to provide geographies that allow reporting of statistics across time on a consistent geographical base
+
+  * Changes to the 2001 OAs were kept to a minimum with 2.6% of OAs being changed using the 2011 Census data
+
+  * In 2011 there were 181,408 output areas (OAs), 34,753 lower layer super output areas (LSOAs), 7,201 middle layer super output areas (MSOAs) and 8,570 electoral wards/divisions in England and Wales
+
+  * The average population in England and Wales on 27 March 2011 was 309 in OAs, 1,614 in LSOAs, 7,787 in MSOAs and 6,543 in electoral wards/divisions
+
+* In the UK, a [built up area](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#built-up-area-built-up-area-sub-division) is a land with a minimum area of 20 hectares (200,000 square metres), while settlements within 200 metres of each other are linked
+
+## System Architecture
 
 > This distributed system will consist of six layers. Each layer is responsible for one logical component in the data flow. These layers of abstraction allow for individual components within layers to be upgraded or modified without affecting the functionality of other layers. This decoupling allows for different individuals to work such things as data sourcing, indicator creation, algorithmic implementation, and presentation in parallel.
 
 ![System Architecture Diagram](./assets/system-architecture-diagram.svg)
 
-#### Raw Persistent Storage Layer
+<!-- TOOD: explain why layers and separation of concerns is valuable -->
+
+### Raw Persistent Storage Layer
 
 > The *raw persistent storage layer* is responsible for storing all of the raw data from the various sources listed above.
 
@@ -625,7 +658,17 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * This collection of data is an asset on its own.
 
-#### Virtualized Data Layer
+#### [SQL vs NoSQL](https://www.sitepoint.com/sql-vs-nosql-choose/)
+
+> This section explains why chose NoSQL over SQL.
+
+#### Normalized vs Denormalized Data
+
+> Normalized databases involve multiple tables with relationships between. Normalization reduces redundancy and increases integrity. Denormalization can increase query speed by keeping all of the data in a single table.
+
+<!-- TODO: Why do we prefer denormalized to normalized or vice versa -->
+
+### Virtualized Data Layer
 
 > The *virtualized data layer* is responsible for providing an abstraction layer between the physical datasets and the *analysis layer*.
 
@@ -641,7 +684,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * Dremio provides a *graphical user interface* (GUI) to make the process of creating virtual datasets straightforward.
 
-#### Analysis Layer
+### Analysis Layer
 
 > The *analysis layer* is responsible for performing our weak signal analysis.
 
@@ -655,13 +698,13 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * *Jupyter notebooks* will be used to initially explore and implement our methodology.
 
-#### Results Persistent Storage Layer
+### Results Persistent Storage Layer
 
 > The *results persistent storage layer* is responsible for storing the output of our analysis so that it only has to be rerun when either new data is added or the methodology changed.
 
 * The data will be stored with *Mongo* or *Redis*.
 
-#### Presentation Server
+### Presentation Server
 
 > The *presentation server* will be responsible for providing the *presentation client* with access to the necessary data.
 
@@ -669,7 +712,7 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * In particular, this server will be a *GraphQL* server.
 
-#### Presentation Client
+### Presentation Client
 
 > The *presentation client* will be responsible for displaying the relevant results and data to the end consumer.
 
