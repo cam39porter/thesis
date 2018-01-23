@@ -638,7 +638,116 @@ $$O_{\alpha} = \gamma_{\alpha}D_{\alpha}$$ (6)
 
 * In the UK, a [built up area](https://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#built-up-area-built-up-area-sub-division) is a land with a minimum area of 20 hectares (200,000 square metres), while settlements within 200 metres of each other are linked
 
-## System Architecture
+## System Architecture v2
+
+> This section describes systems overall design. The system is built primarily on top of Google Cloud Platform (GCP).
+
+### Raw Persistent Storage Layer
+
+> The *raw persistent storage layer* is responsible for storing all of the raw data. In this sense, this layer acts as the source of truth in the system.
+
+* This layer is implemented with [GCP Cloud Storage](https://cloud.google.com/storage/) or CS.
+
+* CS is a unified object store. This means that it has no sense of the structure of the data persisting there. This is the desired functionality.
+
+* CS serves two functions:
+
+  1. Maintain copies of original raw data.
+  1. Store intermediate data during system.
+
+* In this capacity, it is most important that it is easy for other layers to programmatically store and retrieve objects from CS.
+
+* Objects in CS are stored in buckets. CS simulates a folder hierarchy, but is actually a flat storage system.
+
+* For the purposes of this thesis, a single bucket is used to raw data. This bucket is called `princeton-thesis-raw-storage`.
+
+![Cloud Storage Buckets](./assets/cs-buckets.png)
+
+* Each of the virtual folders contains raw data of a certain type. The types are defined as follows:
+
+  * `enterprises`: raw location data of medium sized enterprises in the UK
+
+  * `uk-census`: raw census data from the UK
+
+  * `us-census`: raw census data from the US
+
+  * `uk-geoconvert`: raw data for converting locations to administrative areas in the UK
+
+  * `us-geoconvert`: raw data for converting locations to administrative areas in the US
+
+  * All other folders represent raw symmetric data from the US and UK that can be used to capture weak signals during the analysis
+
+* Each raw dataset contains metadata on its `source-url` and `access-date`
+
+![raw-data-metadata](./assets/raw-data-metadata.png)
+
+### Virtualized Data Layer
+
+> The *virtualized data layer* is responsible for cleaning and preparing the raw data for analysis. The result of this layer is two master datasets, one for the UK, and one for US. The UK master dataset is used for training where the enterprise locations are the output variable. The US master dataset is used for predictions.
+
+* This layer is implemented with [GCP DataPrep](https://cloud.google.com/dataprep/) or DP.
+
+* DP is a data service for cleaning and preparing raw data for analysis. This includes removing outliers.
+
+* First we create two *flows* in DP, one for the UK master dataset and one for the US master dataset.
+
+* Each flow takes raw data from CS and then cleans and joins it using a language called `wrangle` to create a single dataset.
+
+![DataPrep Flow](./assets/dp-flows.png)
+
+* The `wrangle` recipe for the above flow takes the following form:
+
+![Wrangle](./assets/wrangle.png)
+
+* This system can be used to join an arbitrary amount raw data into a single master dataset for analysis.
+
+* Once a flow is defined, we run a *job* to produce a master dataset that is once again stored in CS. The output a job takes the following form:
+
+![DataPrep Job](./assets/dp-job.png)
+
+### Analysis Layer
+
+> The *analysis layer* is responsible for performing our weak signal analysis. It is divided into two sub layers, a *development layer* for creating and test the methodology and a *deployment layer* for running the analysis at scale whenever new data is added or the resolution of analysis is switched.
+
+#### Development Layer
+
+* This layer is implemented with [GCP DataLab](https://cloud.google.com/datalab/) or DL.
+
+* Instead of setting up a local environment and have to bring the big data to our local machines, DL allows us to bring the development environment to the big data in the cloud.
+
+* DL allows us perform normalization, standardization, indicator creation, analysis, and machine learning in `python` using familiar *IPython* notebooks.
+
+* First, we read in sample data from the master datasets stored in CS.
+
+```bash
+!gsutil -q cp gs://princeton-thesis-data/uk-master/uk-master-data.csv {workspace_path}/data/uk-master-data.csv
+```
+
+* We then normalize and standardize the data.
+
+* With the data normalized and standardized, we create new indicators we believe will be valuable during the weak signal analysis.
+
+* Finally, we define the analytical methodology and models by running correlation and factor analysis.
+
+* We refine these models and deploy them for analysis on the full datasets in the deployment layer.
+
+#### Deployment Layer
+
+[TODO]
+
+### Results Persistent Storage Layer
+
+[TODO]
+
+### Presentation Server
+
+[TODO]
+
+### Presentation Client
+
+[TODO]
+
+## System Architecture v1
 
 > This distributed system will consist of six layers. Each layer is responsible for one logical component in the data flow. These layers of abstraction allow for individual components within layers to be upgraded or modified without affecting the functionality of other layers. This decoupling allows for different individuals to work such things as data sourcing, indicator creation, algorithmic implementation, and presentation in parallel.
 
