@@ -1,6 +1,10 @@
 [
   {
-    "origin": ["http://10.54.111.144:3000/", "http://localhost:3000/"],
+    "origin": [
+      "http://10.54.111.144:3000/",
+      "http://localhost:3000/",
+      "https://thesis-191617.appspot.com/"
+    ],
     "responseHeader": ["Content-Type"],
     "method": ["GET", "HEAD", "DELETE"],
     "maxAgeSeconds": 3600

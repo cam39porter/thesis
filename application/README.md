@@ -2,6 +2,15 @@
 
 ## [CORS](https://cloud.google.com/storage/docs/configuring-cors#configure-cors-veneer)
 
+```
+➜  application git:(master) gsutil cors set config/cs-cors.json gs://thesis-lsoa
+Setting CORS on gs://thesis-lsoa/...
+➜  application git:(master) ✗ gsutil cors set config/cs-cors.json gs://thesis-191617-composite-measure
+Setting CORS on gs://thesis-191617-composite-measure/...
+```
+
+## [Deploy](https://medium.com/google-cloud/how-to-deploy-a-static-react-site-to-google-cloud-platform-55ff0bd0f509)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
