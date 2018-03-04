@@ -2,13 +2,18 @@ import React, { Component } from "react";
 
 import "tachyons";
 
-import { Map, GeoJSON, TileLayer } from "react-leaflet";
-import geoLSOAs from "./assets/lsoa.json";
-
 import rp from "request-promise";
 
+import { Map, GeoJSON, TileLayer, Marker, Popup } from "react-leaflet";
+import geoLSOAs from "./assets/lsoa.json";
+import brewDogs from "./assets/brew-dogs.json";
+import brewDogsComingSoon from "./assets/brew-dogs-coming-soon.json";
+
+const brewDogLocations = brewDogs.locations;
+const brewDogComingSoonLocations = brewDogsComingSoon.locations;
+
 // read output data from cloud storage
-var options = {
+const options = {
   uri:
     "https://storage.googleapis.com/thesis-191617-composite-measure/composite-measure-output.json",
   json: true // Automatically parses the JSON string in the response
@@ -24,7 +29,8 @@ class App extends Component {
       zoom: 6.5,
       showLSOAs: false,
       showCompositeMeasure: false,
-      showBrewDogs: false
+      showBrewDogs: false,
+      showBrewDogsComingSoon: false
     };
 
     this.style = this.style.bind(this);
@@ -101,8 +107,25 @@ class App extends Component {
               className={`tc pointer pa2 ba ${
                 this.state.showBrewDogs ? "bg-light-gray" : "bg-white"
               }`}
+              onClick={() =>
+                this.setState({ showBrewDogs: !this.state.showBrewDogs })
+              }
             >
               Show BrewDogs
+            </p>
+
+            {/* BrewDogs Button */}
+            <p
+              className={`tc pointer pa2 ba ${
+                this.state.showBrewDogsComingSoon ? "bg-light-gray" : "bg-white"
+              }`}
+              onClick={() =>
+                this.setState({
+                  showBrewDogsComingSoon: !this.state.showBrewDogsComingSoon
+                })
+              }
+            >
+              Show BrewDogs Coming Soon
             </p>
 
             {/* LSOAs Button */}
@@ -111,7 +134,12 @@ class App extends Component {
                 this.state.showLSOAs ? "bg-light-gray" : "bg-white"
               }`}
               onClick={() =>
-                this.setState({ showLSOAs: true, showCompositeMeasure: false })
+                this.setState({
+                  showLSOAs: !this.state.showLSOAs,
+                  showCompositeMeasure: !this.state.showLSOAs
+                    ? false
+                    : this.showCompositeMeasure
+                })
               }
             >
               Show LSOAs
@@ -129,7 +157,12 @@ class App extends Component {
                   );
                   return;
                 }
-                this.setState({ showLSOAs: false, showCompositeMeasure: true });
+                this.setState({
+                  showLSOAs: !this.state.showCompositeMeasure
+                    ? false
+                    : this.showLSOAs,
+                  showCompositeMeasure: !this.state.showCompositeMeasure
+                });
               }}
             >
               Show Composite Measure
@@ -150,6 +183,28 @@ class App extends Component {
             // https://www.mapbox.com/studio/styles/mapbox/light-v9/
             url="https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2FtZXJvbnBvcnRlciIsImEiOiJjamVjdGgwZW4wcm9kMnhwYnA2NzgxOWF2In0.RVXtackCUG_tFb3OZUf95g"
           />
+          {this.state.showBrewDogs
+            ? brewDogLocations.map(brewDog => {
+                return (
+                  <Marker position={brewDog.pos} key={brewDog.url}>
+                    <Popup>
+                      <a href={brewDog.url}>{brewDog.url}</a>
+                    </Popup>
+                  </Marker>
+                );
+              })
+            : ""}
+          {this.state.showBrewDogsComingSoon
+            ? brewDogComingSoonLocations.map(brewDog => {
+                return (
+                  <Marker position={brewDog.pos} key={brewDog.url}>
+                    <Popup>
+                      <a href={brewDog.url}>{brewDog.url}</a>
+                    </Popup>
+                  </Marker>
+                );
+              })
+            : ""}
         </Map>
       </div>
     );

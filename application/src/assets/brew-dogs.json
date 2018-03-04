@@ -1,0 +1,128 @@
+{
+  "locations": [
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/aberdeen",
+      "pos": [57.161198, -2.097745]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/birmingham",
+      "pos": [52.2036671, -2.0123334]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/brighton",
+      "pos": [50.8246141, -0.1377927]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/bristol",
+      "pos": [51.4535844, -2.5946927]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/camden",
+      "pos": [51.5383479, -0.1431343]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/cardiff",
+      "pos": [51.4786381, -3.1812359]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/castlegate",
+      "pos": [57.1475325, -2.096835]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/clapham-junction",
+      "pos": [51.4609182, -0.165261]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/clerkenwell",
+      "pos": [51.5224248, -0.1060691]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/doghouse-merchant-city",
+      "pos": [55.8593709, -4.2501861]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/dogtap",
+      "pos": [57.3702579, -2.0542072]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/dundee",
+      "pos": [56.4631751, -2.9730034]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/edinburgh",
+      "pos": [55.9483998, -3.1915591]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/glasgow",
+      "pos": [55.8682678, -4.2943011]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/leeds",
+      "pos": [53.7955461, -1.5419802]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/leicester",
+      "pos": [52.6337149, -1.1369957]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/liverpool",
+      "pos": [53.4018078, -2.9794024]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/lothian-road",
+      "pos": [55.9475844, -3.2094451]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/manchester",
+      "pos": [53.4780023, -2.2494148]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/newcastle",
+      "pos": [54.9699662, -1.6119184]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/northstreetleeds",
+      "pos": [53.8010952, -1.5409532]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/norwich",
+      "pos": [52.630146, 1.2955705]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/nottingham",
+      "pos": [52.9546008, -1.146482]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/oxford",
+      "pos": [51.7480801, -1.2394128]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/sheffield",
+      "pos": [53.3795537, -1.4793008]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/shepherds-bush",
+      "pos": [51.5028725, -0.2260934]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/shoreditch",
+      "pos": [51.5245866, -0.0748011]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/stirling",
+      "pos": [56.1192118, -3.9413329]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/soho",
+      "pos": [51.5150931, -0.1394235]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/southampton",
+      "pos": [50.9132509, -1.4077478]
+    },
+    {
+      "url": "https://www.brewdog.com/usa/bars/uk/york",
+      "pos": [53.9565499, -1.0925516]
+    }
+  ]
+}
