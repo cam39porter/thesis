@@ -5,17 +5,21 @@ import "tachyons";
 import rp from "request-promise";
 
 import { Map, GeoJSON, TileLayer, Marker, Popup } from "react-leaflet";
-import geoLSOAs from "./assets/lsoa.json";
 import brewDogs from "./assets/brew-dogs.json";
 import brewDogsComingSoon from "./assets/brew-dogs-coming-soon.json";
 
 const brewDogLocations = brewDogs.locations;
 const brewDogComingSoonLocations = brewDogsComingSoon.locations;
 
-// read output data from cloud storage
-const options = {
+// read data from cloud storage
+const measureOptions = {
   uri:
     "https://storage.googleapis.com/thesis-191617-composite-measure/composite-measure-output.json",
+  json: true // Automatically parses the JSON string in the response
+};
+
+const lsoaOptions = {
+  uri: "https://storage.googleapis.com/thesis-lsoa/lsoa.json",
   json: true // Automatically parses the JSON string in the response
 };
 
@@ -24,6 +28,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      geoLSOAs: {},
       outputDataLoaded: false,
       center: [52.797919, -1.35631],
       zoom: 6.5,
@@ -38,25 +43,32 @@ class App extends Component {
   }
 
   componentDidMount() {
-    rp(options)
-      .then(analysisOutput => {
-        // index output LSOA geography code
-        var geoToMeasure = {};
-        for (var key in analysisOutput) {
-          var output = analysisOutput[key];
-          geoToMeasure[output["geography_code"]] = output["Composite_Measure"];
-        }
+    var tempGeoLSOAs = {};
+    rp(lsoaOptions)
+      .then(resGeoLSOA => {
+        tempGeoLSOAs = resGeoLSOA;
 
-        // add output to GeoJSON properties
-        for (var index in geoLSOAs["features"]) {
-          var feature = geoLSOAs["features"][index];
-          var compositeMeasure = geoToMeasure[feature.properties.lsoa11cd];
-          feature.properties["composite_measure"] = compositeMeasure;
-          geoLSOAs["features"][index] = feature;
-        }
+        return rp(measureOptions).then(analysisOutput => {
+          // index output LSOA geography code
+          var geoToMeasure = {};
+          for (var key in analysisOutput) {
+            var output = analysisOutput[key];
+            geoToMeasure[output["geography_code"]] =
+              output["Composite_Measure"];
+          }
 
-        this.setState({
-          outputDataLoaded: true
+          // add output to GeoJSON properties
+          for (var index in tempGeoLSOAs["features"]) {
+            var feature = tempGeoLSOAs["features"][index];
+            var compositeMeasure = geoToMeasure[feature.properties.lsoa11cd];
+            feature.properties["composite_measure"] = compositeMeasure;
+            tempGeoLSOAs["features"][index] = feature;
+          }
+
+          this.setState({
+            outputDataLoaded: true,
+            geoLSOAs: tempGeoLSOAs
+          });
         });
       })
       .catch(err => {
@@ -133,14 +145,20 @@ class App extends Component {
               className={`tc pointer pa2 ba ${
                 this.state.showLSOAs ? "bg-light-gray" : "bg-white"
               }`}
-              onClick={() =>
+              onClick={() => {
+                if (!this.state.outputDataLoaded) {
+                  alert(
+                    "Be patient young padawan! Still waiting on data from server."
+                  );
+                  return;
+                }
                 this.setState({
                   showLSOAs: !this.state.showLSOAs,
                   showCompositeMeasure: !this.state.showLSOAs
                     ? false
                     : this.showCompositeMeasure
-                })
-              }
+                });
+              }}
             >
               Show LSOAs
             </p>
@@ -175,7 +193,7 @@ class App extends Component {
           className={`fr w-50 vh-100`}
         >
           {this.state.showLSOAs || this.state.showCompositeMeasure ? (
-            <GeoJSON data={geoLSOAs} style={this.style} />
+            <GeoJSON data={this.state.geoLSOAs} style={this.style} />
           ) : (
             ""
           )}
