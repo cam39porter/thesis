@@ -4,6 +4,8 @@ import "tachyons";
 
 import rp from "request-promise";
 
+import Control from "react-leaflet-control";
+
 import { Map, GeoJSON, TileLayer, Marker, Popup } from "react-leaflet";
 import brewDogs from "./assets/brew-dogs.json";
 import brewDogsComingSoon from "./assets/brew-dogs-coming-soon.json";
@@ -79,18 +81,18 @@ class App extends Component {
   // Color Selection
   getColor(d) {
     return d > 0.75
-      ? "#2166ac"
+      ? "#b2182b"
       : d > 0.5
-        ? "#4393c3"
+        ? "#d6604d"
         : d > 0.25
-          ? "#92c5de"
-          : d > 0.07
-            ? "#d1e5f0"
-            : d > 0.001
+          ? "#f4a582"
+          : d > 0.01
+            ? "#fddbc7"
+            : d > 0
               ? "#f7f7f7"
-              : d > -0.06
-                ? "#fddbc7"
-                : d > -0.25 ? "#f4a582" : d > -0.5 ? "#d6604d" : "#b2182b";
+              : d > -0.01
+                ? "#d1e5f0"
+                : d > -0.25 ? "#92c5de" : d > -0.5 ? "#4393c3" : "#2166ac";
   }
 
   //  Style the GeoJSON
@@ -185,6 +187,54 @@ class App extends Component {
             >
               Show Composite Measure
             </p>
+
+            <hr />
+
+            {/* City Zoom Buttons */}
+            <p
+              className={`tc pointer pa2 ba br-white`}
+              onClick={() => {
+                this.setState({
+                  center: [51.5116731, -0.1108892],
+                  zoom: 13
+                });
+              }}
+            >
+              London
+            </p>
+            <p
+              className={`tc pointer pa2 ba br-white`}
+              onClick={() => {
+                this.setState({
+                  center: [53.4801082, -2.2404605],
+                  zoom: 13
+                });
+              }}
+            >
+              Manchester
+            </p>
+            <p
+              className={`tc pointer pa2 ba br-white`}
+              onClick={() => {
+                this.setState({
+                  center: [53.4064681, -2.9949352],
+                  zoom: 13
+                });
+              }}
+            >
+              Liverpool
+            </p>
+            <p
+              className={`tc pointer pa2 ba br-white`}
+              onClick={() => {
+                this.setState({
+                  center: [52.4794161, -1.9057012],
+                  zoom: 13
+                });
+              }}
+            >
+              Birmingham
+            </p>
           </div>
         </div>
         <Map
@@ -223,6 +273,49 @@ class App extends Component {
                 );
               })
             : ""}
+          <Control position="topright">
+            <div
+              className={`pa3 ma2 flex flex-column bg-near-white shadow-1 tc`}
+            >
+              <div className={`f6 b tc pa2`}>Composite Measure</div>
+              <div>
+                <div className={`r1 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>> 0.75</div>
+              </div>
+              <div>
+                <div className={`r2 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>> 0.50</div>
+              </div>
+              <div>
+                <div className={`r3 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>> 0.25</div>
+              </div>
+              <div>
+                <div className={`r4 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>> 0.007</div>
+              </div>
+              <div>
+                <div className={`n1 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`} />
+              </div>
+              <div>
+                <div className={`b1 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>{"< -0.007"}</div>
+              </div>
+              <div>
+                <div className={`b2 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>{"< -0.25"}</div>
+              </div>
+              <div>
+                <div className={`b3 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>{"< -0.50"}</div>
+              </div>
+              <div>
+                <div className={`b4 w1 h1 tl dib ma1`} />
+                <div className={`dib v-top ma1 tr w3`}>{"< -0.75"}</div>
+              </div>
+            </div>
+          </Control>
         </Map>
       </div>
     );
